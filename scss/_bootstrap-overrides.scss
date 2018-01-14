@@ -1,5 +1,5 @@
 // Bootstrap overrides for this template
-.btn {
+/* .btn {
   font-size: 14px;
   font-weight: 800;
   padding: 15px 25px;
@@ -8,7 +8,27 @@
   border-radius: 0;
   @include sans-serif-font;
 }
+ */
 
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+
+}
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
@@ -25,3 +45,6 @@
   font-size: 16px;
   padding: 25px 35px;
 }
+
+
+

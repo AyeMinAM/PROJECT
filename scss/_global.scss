@@ -1,7 +1,8 @@
 // Global styling for this template
 body {
   font-size: 20px;
-  color: $gray-900;
+  background-color:$black;
+  color: $white;
   @include sans-serif-font;
 }
 
@@ -19,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 700;
   @include sans-serif-font;
 }
 
@@ -38,7 +39,7 @@ blockquote {
 }
 
 .section-heading {
-  font-size: 36px;
+  font-size: 2em;
   font-weight: 700;
   margin-top: 60px;
 }
