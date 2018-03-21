@@ -1,11 +1,48 @@
 
 @import "variables.scss";
+
 section.projectA{
 	background-color:$turquoise;
 	position:relative;
 	height:400px;
 
-	.image-wrapper{
+	@media only screen and (max-width: 1200px){
+		height:350px;
+	} 
+	@media only screen and (max-width: 991px){
+		height:300px;
+	} 
+	@media only screen and (max-width: 767px){
+		height:230px;
+	} 
+	
+	@media only screen and (max-width: 576px){
+		height:230px;
+	} 
+	@media only screen and (max-width: 500px){
+		height:200px;
+	} 
+	@media only screen and (max-width: 400px){
+		height:150px;
+
+		} 
+
+		.overlay {
+	    position: absolute;
+	    z-index:100;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-color: $black;
+	    opacity: 0.6;
+
+	    &:hover{
+	    	opacity:0;
+	    }
+	  }
+
+		.image-wrapper{
 		position:absolute;
 		bottom:0;
 		left:0;
@@ -16,13 +53,103 @@ section.projectA{
       		float:right;
 		}
 		 a{
-		 	position:absolute;
-		 	top:35%;
-		 	left:20%;
+		 	position: absolute;
+		 	z-index: 1000;
+    		top: 35%;
+    		left: 14%;
+    		font-weight: 700;
+    		font-size: 1.5em;
+    		position: absolute;
+ 			border: 1px solid $white;
+ 			padding: 25px 35px;
+ 			color:$white;
+ 			&:hover{
+ 				background-color:$white;
+ 				opacity:0.6;
+ 			}
+
+
+ 			@media only screen and (max-width: 576px){
+				font-size:1em;
+				padding: 10px;
+	} 
 		 }
 	}
 } 
 
+
 section.projectB{
 	background-color:$gold;
+	position:relative;
+	height:400px;
+
+	@media only screen and (max-width: 1200px){
+		height:350px;
+	} 
+	@media only screen and (max-width: 991px){
+		height:300px;
+	} 
+	@media only screen and (max-width: 767px){
+		height:230px;
+	} 
+	
+	@media only screen and (max-width: 576px){
+		height:230px;
+	} 
+	@media only screen and (max-width: 500px){
+		height:200px;
+	} 
+	@media only screen and (max-width: 400px){
+		height:150px;
+
+		} 
+
+		.overlay {
+	    position: absolute;
+	    z-index:100;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-color: $black;
+	    opacity: 0.6;
+
+	    &:hover{
+	    	opacity:0;
+	    }
+	  }
+
+		.image-wrapper{
+		position:absolute;
+		bottom:0;
+		left:0;
+
+		img{
+			width:80%;
+      		height:auto;
+      		float:left;
+		}
+		 a{
+		 	position: absolute;
+		 	z-index: 1000;
+    		top: 35%;
+    		right: 14%;
+    		font-weight: 700;
+    		font-size: 1.5em;
+    		position: absolute;
+ 			border: 1px solid $white;
+ 			padding: 25px 35px;
+ 			color:$white;
+ 			&:hover{
+ 				background-color:$white;
+ 				opacity:0.6;
+ 			}
+
+
+ 			@media only screen and (max-width: 576px){
+				font-size:1em;
+				padding: 10px;
+	} 
+		 }
+	}
 }

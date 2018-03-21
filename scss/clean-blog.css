@@ -332,6 +332,35 @@ section.projectA {
   background-color: #00cccc;
   position: relative;
   height: 400px; }
+  @media only screen and (max-width: 1200px) {
+    section.projectA {
+      height: 350px; } }
+  @media only screen and (max-width: 991px) {
+    section.projectA {
+      height: 300px; } }
+  @media only screen and (max-width: 767px) {
+    section.projectA {
+      height: 230px; } }
+  @media only screen and (max-width: 576px) {
+    section.projectA {
+      height: 230px; } }
+  @media only screen and (max-width: 500px) {
+    section.projectA {
+      height: 200px; } }
+  @media only screen and (max-width: 400px) {
+    section.projectA {
+      height: 150px; } }
+  section.projectA .overlay {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6; }
+    section.projectA .overlay:hover {
+      opacity: 0; }
   section.projectA .image-wrapper {
     position: absolute;
     bottom: 0;
@@ -342,10 +371,81 @@ section.projectA {
       float: right; }
     section.projectA .image-wrapper a {
       position: absolute;
+      z-index: 1000;
       top: 35%;
-      left: 20%; }
+      left: 14%;
+      font-weight: 700;
+      font-size: 1.5em;
+      position: absolute;
+      border: 1px solid #fff;
+      padding: 25px 35px;
+      color: #fff; }
+      section.projectA .image-wrapper a:hover {
+        background-color: #fff;
+        opacity: 0.6; }
+      @media only screen and (max-width: 576px) {
+        section.projectA .image-wrapper a {
+          font-size: 1em;
+          padding: 10px; } }
 
 section.projectB {
-  background-color: #a37e2c; }
+  background-color: #a37e2c;
+  position: relative;
+  height: 400px; }
+  @media only screen and (max-width: 1200px) {
+    section.projectB {
+      height: 350px; } }
+  @media only screen and (max-width: 991px) {
+    section.projectB {
+      height: 300px; } }
+  @media only screen and (max-width: 767px) {
+    section.projectB {
+      height: 230px; } }
+  @media only screen and (max-width: 576px) {
+    section.projectB {
+      height: 230px; } }
+  @media only screen and (max-width: 500px) {
+    section.projectB {
+      height: 200px; } }
+  @media only screen and (max-width: 400px) {
+    section.projectB {
+      height: 150px; } }
+  section.projectB .overlay {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6; }
+    section.projectB .overlay:hover {
+      opacity: 0; }
+  section.projectB .image-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    section.projectB .image-wrapper img {
+      width: 80%;
+      height: auto;
+      float: left; }
+    section.projectB .image-wrapper a {
+      position: absolute;
+      z-index: 1000;
+      top: 35%;
+      right: 14%;
+      font-weight: 700;
+      font-size: 1.5em;
+      position: absolute;
+      border: 1px solid #fff;
+      padding: 25px 35px;
+      color: #fff; }
+      section.projectB .image-wrapper a:hover {
+        background-color: #fff;
+        opacity: 0.6; }
+      @media only screen and (max-width: 576px) {
+        section.projectB .image-wrapper a {
+          font-size: 1em;
+          padding: 10px; } }
 
 /*# sourceMappingURL=clean-blog.css.map */
