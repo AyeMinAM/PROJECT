@@ -1,3 +1,12 @@
+.bg-black {
+  background-color: #000000; }
+
+.bg-darkgray {
+  background-color: #333333; }
+
+.bg-turquoise {
+  background-color: #00cccc; }
+
 section.projectA {
   background-color: #00cccc;
   position: relative;
@@ -27,7 +36,7 @@ section.projectA {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
     opacity: 0.6; }
     section.projectA .overlay:hover {
       opacity: 0; }
@@ -47,11 +56,11 @@ section.projectA {
       font-weight: 700;
       font-size: 1.5em;
       position: absolute;
-      border: 1px solid #fff;
+      border: 1px solid #ffffff;
       padding: 25px 35px;
-      color: #fff; }
+      color: #ffffff; }
       section.projectA .image-wrapper a:hover {
-        background-color: #fff;
+        background-color: #ffffff;
         opacity: 0.6; }
       @media only screen and (max-width: 576px) {
         section.projectA .image-wrapper a {
@@ -87,7 +96,7 @@ section.projectB {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
     opacity: 0.6; }
     section.projectB .overlay:hover {
       opacity: 0; }
@@ -107,15 +116,70 @@ section.projectB {
       font-weight: 700;
       font-size: 1.5em;
       position: absolute;
-      border: 1px solid #fff;
+      border: 1px solid #ffffff;
       padding: 25px 35px;
-      color: #fff; }
+      color: #ffffff; }
       section.projectB .image-wrapper a:hover {
-        background-color: #fff;
+        background-color: #ffffff;
         opacity: 0.6; }
       @media only screen and (max-width: 576px) {
         section.projectB .image-wrapper a {
           font-size: 1em;
           padding: 10px; } }
+
+#Tab ul {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  #Tab ul li:first-child {
+    width: 50%;
+    background: #00cccc;
+    text-align: center;
+    padding: 15px 0; }
+    #Tab ul li:first-child a {
+      color: white;
+      font-size: 20px; }
+  #Tab ul li:nth-child(2) {
+    width: 50%;
+    background: #ededef;
+    text-align: center;
+    padding: 15px 0; }
+    #Tab ul li:nth-child(2) a {
+      color: #000000;
+      font-size: 20px; }
+
+@media screen and (min-width: 769px) {
+  .laptop-scroll {
+    margin-left: 0%;
+    width: 80%; } }
+@media screen and (min-width: 769px) {
+  .laptop-scroll {
+    margin-top: 130px; } }
+.laptop-scroll {
+  position: relative;
+  margin-top: 30px;
+  direction: ltr;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  width: 100%;
+  display: inline-block;
+  min-height: 1px;
+  box-sizing: border-box; }
+
+@media screen and (min-width: 769px) {
+  .laptop-scroll .img-cont {
+    position: absolute;
+    top: 7%;
+    left: 16.9%;
+    height: 78.5%;
+    width: 66.25%;
+    overflow: scroll; } }
+@media screen and (min-width: 769px) {
+  .laptop-scroll img {
+    border-radius: 0;
+    box-shadow: none; } }
+.laptop-scroll img {
+  display: block;
+  width: 100%; }
 
 /*# sourceMappingURL=burmeseboyyo.css.map */

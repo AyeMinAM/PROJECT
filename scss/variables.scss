@@ -1,9 +1,33 @@
 // Variables
+//this is all about colors
+$black:     #000000;
+$white:     #ffffff;
+$darkgray: 	#333333;
+$gray-01:   #ededef;
+$gray-02:   #c3c3c3;
 $turquoise: #00cccc;
-$gold: #a37e2c;
-$copper: #c8957b;
-$white:    #fff !default;
-$black:    #000 !default;
+$gold: 		#a37e2c;
+$copper:    #c8957b;
+
+
+.bg-black{
+	background-color:$black;
+}
+.bg-darkgray {
+	background-color:$darkgray;
+}
+.bg-turquoise{
+	background-color:$turquoise;
+}
+
+
+
+
+
+
+
+
+
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -26,7 +50,7 @@ $green:   #28a745 !default;
 $teal:    #0085A1 !default;
 $cyan:    #17a2b8 !default;
 
-$primary:       $teal !default;
+$primary:       #0085A1 !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
