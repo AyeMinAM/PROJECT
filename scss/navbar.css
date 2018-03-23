@@ -1,28 +1,26 @@
 /*
-Error: Undefined mixin 'sans-serif-font'.
-        on line 7 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss, in `sans-serif-font'
-        from line 7 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss
+Error: Undefined variable: "$gray-200".
+        on line 4 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss
 
-2: @import "variables.scss";
-3: #mainNav {
-4:   position: absolute;
-5:   border-bottom: 1px solid $gray-200;
-6:   background-color: white;
-7:   @include sans-serif-font;
-8:   .navbar-brand {
-9:     font-weight: 800;
-10:     color: $gray-800;
-11:   }
-12:   .navbar-toggler {
+1: // Styling for the navbar
+2: #mainNav {
+3:   position: absolute;
+4:   border-bottom: 1px solid $gray-200;
+5:   background-color: white;
+6:   @include sans-serif-font;
+7:   .navbar-brand {
+8:     font-weight: 800;
+9:     color: $gray-800;
 
 Backtrace:
-/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss:7:in `sans-serif-font'
-/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss:7
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss:4
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'sans-serif-font'.\A         on line 7 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss, in `sans-serif-font'\A         from line 7 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss\A \A 2: @import \"variables.scss\";\A 3: #mainNav {\A 4:   position: absolute;\A 5:   border-bottom: 1px solid $gray-200;\A 6:   background-color: white;\A 7:   @include sans-serif-font;\A 8:   .navbar-brand {\A 9:     font-weight: 800;\A 10:     color: $gray-800;\A 11:   }\A 12:   .navbar-toggler {"; }
+  content: "Error: Undefined variable: \"$gray-200\".\A         on line 4 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss\A \A 1: // Styling for the navbar\A 2: #mainNav {\A 3:   position: absolute;\A 4:   border-bottom: 1px solid $gray-200;\A 5:   background-color: white;\A 6:   @include sans-serif-font;\A 7:   .navbar-brand {\A 8:     font-weight: 800;\A 9:     color: $gray-800;"; }
