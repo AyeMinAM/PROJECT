@@ -373,6 +373,10 @@ h3 {
   height: auto;
   margin-right: 10px; }
 
+.icons-divider {
+  width: 50px;
+  height: auto; }
+
 .flex-center-h-v {
   display: flex;
   align-items: center;
