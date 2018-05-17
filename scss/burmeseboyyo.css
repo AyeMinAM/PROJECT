@@ -10,6 +10,9 @@
 .bg-gray {
   background-color: #ededef; }
 
+.text-color-gray {
+  color: #ededef; }
+
 h3 {
   font-weight: 500;
   font-size: 30px;
@@ -21,14 +24,26 @@ h3 {
 .full-width {
   width: 100%; }
 
+.full-height {
+  height: 100%; }
+
 .margin-15-t-b {
   margin: 15px 0 15px 0; }
+
+.am-inline-block {
+  display: inline-block; }
 
 .am-float-right {
   float: right; }
 
 .am-float-left {
   float: left; }
+
+.am-font-5 {
+  font-size: 0.5em; }
+
+.am-font-1point2 {
+  font-size: 1.2em; }
 
 .vl {
   border-left: 5px solid #00cccc;
@@ -234,39 +249,21 @@ section {
     color: #000000;
     justify-content: center; }
 
-.table-parent {
-  background-color: white;
+section.branding img.img-fluid {
+  display: block;
   width: 80%;
-  height: 400px;
+  height: auto;
   margin-left: auto;
-  margin-right: auto;
-  color: #ffffff; }
-  .table-parent tr td.first-cell {
-    padding: 0;
-    width: 50%; }
-    .table-parent tr td.first-cell .table-1child tr.first-child {
-      height: 300px;
-      background-color: #00cccc; }
-    .table-parent tr td.first-cell .table-1child tr.second-child {
-      height: 100px; }
-  .table-parent td.second-cell {
-    padding: 0;
-    width: 50; }
-    .table-parent td.second-cell table td.bg-white {
-      background-color: #ffffff; }
-    .table-parent td.second-cell table td.bg-lighter-gray {
-      background-color: #ededef; }
-    .table-parent td.second-cell table td.bg-light-gray {
-      background-color: #ccc; }
-    .table-parent td.second-cell table td.bg-gray {
-      background-color: #c3c3c3; }
-    .table-parent td.second-cell table td.bg-dark-gray {
-      background-color: #333; }
-    .table-parent td.second-cell table td.bg-yellow {
-      background-color: #F5D10A; }
-  .table-parent .secondary-turquoise {
-    background-color: #6cc; }
-  .table-parent .print-color {
-    background-color: #34c0c4; }
+  margin-right: auto; }
+section.branding div.icons-explained {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+  section.branding div.icons-explained p {
+    color: #000000; }
+
+section.navigate-portfolio div.container {
+  height: 150px;
+  div: nth-child; }
 
 /*# sourceMappingURL=burmeseboyyo.css.map */

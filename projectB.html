@@ -21,7 +21,39 @@
     <link href="scss/clean-blog.css" rel="stylesheet">
 
   </head>
+<style>
 
+.{
+ border:1px solid green;
+  height:100%;
+}
+h1{
+  color:red;
+
+}
+.curve {
+  position: absolute;
+  height: 400px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: repeat-x;
+  background-image:url('https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO');
+   }
+
+ .content{
+     z-index:100;
+          position:absolute;
+          top:0;
+         width:100%;
+          background:pink;
+}
+           .am-col-1, .am-col-2{
+           border:1px solid green;
+              height:100%;
+            }
+
+</style>
   <body>
 
     <!-- Navigation -->
@@ -50,22 +82,30 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post-bg.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="post-heading">
-              <h1>Man must explore, and this is exploration at its greatest</h1>
-              <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-              <span class="meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on August 24, 2017</span>
-            </div>
-          </div>
+    <header class="masthead" style="background-color:#a37e2c;">
+      <div class="container projectB-header">
+          <div class="curve">
+            <div class="content">
+                <h1>this is the beginning</h1>
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-md-6">
+                      <div class="am-col-1">
+                          <img src="http://via.placeholder.com/300x600">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6">
+                      <div class="am-col-2">
+                          <div>Code in the browser</div>
+                      </div>
+                    </div>
+                  </div><!--the end of row-->
+            </div><!--the end of content-->
         </div>
       </div>
     </header>
+
+  
+
 
     <!-- Post Content -->
     <article>
