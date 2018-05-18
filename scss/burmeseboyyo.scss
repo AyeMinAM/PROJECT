@@ -349,30 +349,43 @@ section.navigate-portfolio {
 	}
 }
 
+
 // Project B page
 
-// .projectB-header .curve{
-// 		position: absolute;
-//   		height: 400px;
-//   		bottom: 0px;
-//   		left: 0px;
-//   		right: 0px;
-//   		background-repeat: repeat-x;
-//   		background-image:url('https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO');
+.projectB-header{
+  height:800px;
+  position:relative;
 
-//    			.content{
-// 				z-index:100;
-//   				position:absolute;
-//   				top:0;
-//   				width:100%;
-//   				background:pink;
+	  .content{
+	  z-index:100;
+	  position:absolute;
+	  top:20%;
+	  width:100%;
 
-//   					.am-col-1{
-// 						border:1px solid green;
-//   						height:100%;
-// 						}
-//   					}
-//  }
+			  .am-col-1, .am-col-2{
+			  border:1px solid green;
+			  height:100%;
+			  
+			  	img{
+			  		float:right;
+			  	}
+			  }
+			}
+		}
+
+
+.curve {
+  position: absolute;
+  height: 400px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: repeat-x;
+  background-image:url('https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO');
+   }
+
+
+
 
 
 

@@ -266,4 +266,27 @@ section.navigate-portfolio div.container {
   height: 150px;
   div: nth-child; }
 
+.projectB-header {
+  height: 800px;
+  position: relative; }
+  .projectB-header .content {
+    z-index: 100;
+    position: absolute;
+    top: 20%;
+    width: 100%; }
+    .projectB-header .content .am-col-1, .projectB-header .content .am-col-2 {
+      border: 1px solid green;
+      height: 100%; }
+      .projectB-header .content .am-col-1 img, .projectB-header .content .am-col-2 img {
+        float: right; }
+
+.curve {
+  position: absolute;
+  height: 400px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: repeat-x;
+  background-image: url("https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO"); }
+
 /*# sourceMappingURL=burmeseboyyo.css.map */
