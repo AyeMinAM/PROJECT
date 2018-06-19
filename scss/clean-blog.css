@@ -608,7 +608,9 @@ section.navigate-portfolio div.container {
       border: 1px solid green;
       height: 100%; }
       .projectB-header .content .am-col-1 img, .projectB-header .content .am-col-2 img {
-        float: right; }
+        float: right;
+        width: 400;
+        height: auto; }
 
 .curve {
   position: absolute;
