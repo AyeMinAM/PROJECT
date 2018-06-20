@@ -367,8 +367,32 @@ section.navigate-portfolio {
 			  
 			  	img{
 			  		float:right;
-			  		width:400;
+			  		width:400px;
 			  		height:auto;
+			  	}
+			  }
+
+			  .am-col-2{
+			  border:1px solid red;
+			  height:100%;
+			  position:relative;
+
+			  
+			  	.img-text{
+			  		display:inline-block;
+			  		position:absolute;
+			  		top:33%;
+			  		text-align:center;
+
+			  		.project-title{
+			  			color:$black;
+			  			
+			  		}
+			  		.project-desp{
+			  			color:$black;
+			  			font-size: 2em;
+			  			text-transform:uppercase;
+			  			}
 			  	}
 			  }
 			}

@@ -609,8 +609,23 @@ section.navigate-portfolio div.container {
       height: 100%; }
       .projectB-header .content .am-col-1 img, .projectB-header .content .am-col-2 img {
         float: right;
-        width: 400;
+        width: 400px;
         height: auto; }
+    .projectB-header .content .am-col-2 {
+      border: 1px solid red;
+      height: 100%;
+      position: relative; }
+      .projectB-header .content .am-col-2 .img-text {
+        display: inline-block;
+        position: absolute;
+        top: 33%;
+        text-align: center; }
+        .projectB-header .content .am-col-2 .img-text .project-title {
+          color: #000000; }
+        .projectB-header .content .am-col-2 .img-text .project-desp {
+          color: #000000;
+          font-size: 2em;
+          text-transform: uppercase; }
 
 .curve {
   position: absolute;
