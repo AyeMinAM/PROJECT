@@ -609,7 +609,7 @@ section.navigate-portfolio div.container {
       height: 100%; }
       .projectB-header .content .am-col-1 img, .projectB-header .content .am-col-2 img {
         float: right;
-        width: 400px;
+        width: 350px;
         height: auto; }
     .projectB-header .content .am-col-2 {
       border: 1px solid red;
@@ -635,5 +635,24 @@ section.navigate-portfolio div.container {
   right: 0px;
   background-repeat: repeat-x;
   background-image: url("https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO"); }
+
+.kootour-explained {
+  background-color: #ededef; }
+  .kootour-explained .parent {
+    position: relative; }
+    .kootour-explained .parent .position {
+      width: 70%;
+      position: absolute;
+      top: 10%;
+      z-index: 100;
+      color: #ffffff;
+      left: 10%; }
+    .kootour-explained .parent .first-half {
+      height: 90vh;
+      background: red; }
+    .kootour-explained .parent .second-half {
+      background-image: url("../img/golf-photo-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 /*# sourceMappingURL=clean-blog.css.map */

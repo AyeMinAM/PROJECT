@@ -367,7 +367,7 @@ section.navigate-portfolio {
 			  
 			  	img{
 			  		float:right;
-			  		width:400px;
+			  		width:350px;
 			  		height:auto;
 			  	}
 			  }
@@ -408,6 +408,31 @@ section.navigate-portfolio {
   background-repeat: repeat-x;
   background-image:url('https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO');
    }
+.kootour-explained{
+	background-color:#ededef;
+.parent{
+  position:relative;
+		.position{
+		  width:70%;
+		  position:absolute;
+		  top:10%;
+		  z-index:100;
+		  color:#ffffff;
+		  left:10%;
+		}
+
+				.first-half{
+  					height:90vh;
+  					background:red;
+					}
+
+				.second-half{
+   					background-image:url('../img/golf-photo-background.jpg');
+   					background-repeat:no-repeat;
+   					background-size:cover;
+					}	
+			}
+}
 
 
 
