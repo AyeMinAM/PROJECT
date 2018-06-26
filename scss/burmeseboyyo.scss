@@ -17,6 +17,12 @@
 			.text-color-gray{
 				color:$gray-01;
 			}
+			.text-color-white{
+				color:$white;
+			}
+			.text-color-black{
+				color:$black;
+			}
 
           h3{
             font-weight: 500;
@@ -26,6 +32,9 @@
           
           .width-50{
             width:50%;
+          }
+          .width-30{
+          	width:30%;
           }
           .full-width{
             width:100%;
@@ -439,13 +448,58 @@ section.navigate-portfolio {
 
 .section-wireframe{
 	
-	img{
-	width:50%;
+	img.icon-title{
+	width:50px;
 	text-align:center;
 }
+   div {
+   		display:inline-block;
+   		text-align:center
+   		
+			img.img-responsive{
+				width:60%;
+				text-align:center;
+			}
+	}
 }
 
+.final-result{
+	position:relative;
+	height:900px;
 
+		.bar{
+			height:3em;
+  			background:$gold;
+  			position:absolute;
+  			width:100%;
+  			top:50%;
+	 }
+	 .container{
+	 		position:relative;
+	 			.img-wrapper{
+		  			display:block;
+		  			text-align:center;
+		  			position:absolute;
+		  			background:yellow;
+		  			img{
+		  				width:75%;
+		  			}	
+  		}
+	}
+}
+
+.typo-explained{
+	div.img-wrapper{
+		display:inline-block;
+		text-align:center;
+		img.img-01{
+			width:30%;
+		}
+		img.img-02{
+			width:60%;
+		}
+	}
+}
 
 
 // .table-parent{
