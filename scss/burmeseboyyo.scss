@@ -447,20 +447,23 @@ section.navigate-portfolio {
 }
 
 .section-wireframe{
-	
-	img.icon-title{
-	width:50px;
-	text-align:center;
-}
-   div {
-   		display:inline-block;
-   		text-align:center
-   		
-			img.img-responsive{
-				width:60%;
-				text-align:center;
-			}
-	}
+		img.icon-title{
+		width:50px;
+		text-align:center;
+		}
+			   div.img-wrapper {
+			   		
+			   		text-align:center;
+
+						img.section-01, img.section-03{
+							width:60%;
+							}
+						img.section-04{
+							width:40%;
+						}img.section-05{
+							width:20%;
+							}
+				}
 }
 
 .final-result{

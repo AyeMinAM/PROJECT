@@ -670,12 +670,14 @@ section.navigate-portfolio div.container {
 .section-wireframe img.icon-title {
   width: 50px;
   text-align: center; }
-.section-wireframe div {
-  display: inline-block; }
-  .section-wireframe div text-align:center
-  img.img-responsive {
-    width: 60%;
-    text-align: center; }
+.section-wireframe div.img-wrapper {
+  text-align: center; }
+  .section-wireframe div.img-wrapper img.section-01, .section-wireframe div.img-wrapper img.section-03 {
+    width: 60%; }
+  .section-wireframe div.img-wrapper img.section-04 {
+    width: 40%; }
+  .section-wireframe div.img-wrapper img.section-05 {
+    width: 20%; }
 
 .final-result {
   position: relative;
