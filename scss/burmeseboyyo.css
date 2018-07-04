@@ -281,11 +281,17 @@ section.navigate-portfolio div.container {
 .projectB-header {
   height: 800px;
   position: relative; }
+  @media (max-width: 576px) {
+    .projectB-header {
+      height: auto; } }
   .projectB-header .content {
     z-index: 100;
     position: relative;
     top: 20%;
     width: 100%; }
+    @media (max-width: 576px) {
+      .projectB-header .content .am-col-2-wrapper {
+        height: 200px; } }
     .projectB-header .content .am-col-1, .projectB-header .content .am-col-2 {
       height: 100%; }
       .projectB-header .content .am-col-1 img, .projectB-header .content .am-col-2 img {
@@ -298,14 +304,21 @@ section.navigate-portfolio div.container {
       .projectB-header .content .am-col-2 .img-text {
         display: inline-block;
         position: absolute;
-        top: 33%;
+        top: 37%;
         text-align: center; }
+        @media (max-width: 576px) {
+          .projectB-header .content .am-col-2 .img-text {
+            left: 1%;
+            top: 45%; } }
         .projectB-header .content .am-col-2 .img-text .project-title {
           color: #000000; }
         .projectB-header .content .am-col-2 .img-text .project-desp {
           color: #000000;
           font-size: 2em;
           text-transform: uppercase; }
+          @media (max-width: 576px) {
+            .projectB-header .content .am-col-2 .img-text .project-desp {
+              font-size: 1.6em; } }
 
 .curve {
   position: absolute;

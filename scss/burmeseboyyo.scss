@@ -364,14 +364,24 @@ section.navigate-portfolio {
 // Project B page
 
 .projectB-header{
+	
   height:800px;
   position:relative;
 
-	  .content{
+@media #{$bp-xs} {
+    height: auto;
+  }
+		.content{
 	  z-index:100;
 	  position:relative;
 	  top:20%;
 	  width:100%;
+
+	  	.am-col-2-wrapper{
+	  		@media #{$bp-xs} {
+    		height:200px;
+  			}
+	  	}
 
 			  .am-col-1, .am-col-2{
 			  height:100%;
@@ -392,17 +402,26 @@ section.navigate-portfolio {
 			  	.img-text{
 			  		display:inline-block;
 			  		position:absolute;
-			  		top:33%;
+			  		top:37%;
 			  		text-align:center;
 
-			  		.project-title{
+			  			@media #{$bp-xs} {
+    					left: 1%;
+    					top:45%;
+  						}
+
+			  	.project-title{
 			  			color:$black;
-			  			
-			  		}
-			  		.project-desp{
+			  			}
+			  	.project-desp{
 			  			color:$black;
 			  			font-size: 2em;
 			  			text-transform:uppercase;
+
+			  			@media #{$bp-xs} {
+    						font-size:1.6em;
+  							}
+
 			  			}
 			  	}
 			  }
