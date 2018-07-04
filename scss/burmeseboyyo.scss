@@ -369,12 +369,11 @@ section.navigate-portfolio {
 
 	  .content{
 	  z-index:100;
-	  position:absolute;
+	  position:relative;
 	  top:20%;
 	  width:100%;
 
 			  .am-col-1, .am-col-2{
-			  border:1px solid green;
 			  height:100%;
 			  
 			  	img{
@@ -385,7 +384,7 @@ section.navigate-portfolio {
 			  }
 
 			  .am-col-2{
-			  border:1px solid red;
+			  // background-color:lightblue;
 			  height:100%;
 			  position:relative;
 
