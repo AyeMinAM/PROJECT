@@ -383,13 +383,18 @@ section.navigate-portfolio {
   			}
 	  	}
 
-			  .am-col-1, .am-col-2{
+			  .am-col-1{
 			  height:100%;
+			  text-align:center;
 			  
 			  	img{
 			  		float:right;
 			  		width:350px;
 			  		height:auto;
+			  		@media #{$bp-xs} {
+    					text-align:center;
+    					float:none;
+  						}
 			  	}
 			  }
 
@@ -397,18 +402,15 @@ section.navigate-portfolio {
 			  // background-color:lightblue;
 			  height:100%;
 			  position:relative;
+			  display:flex;
+			  justify-content:center;
 
 			  
 			  	.img-text{
 			  		display:inline-block;
 			  		position:absolute;
-			  		top:37%;
+			  		top:45%;
 			  		text-align:center;
-
-			  			@media #{$bp-xs} {
-    					left: 1%;
-    					top:45%;
-  						}
 
 			  	.project-title{
 			  			color:$black;
