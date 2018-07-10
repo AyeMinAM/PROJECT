@@ -45,6 +45,9 @@ h3 {
 .B-margin {
   margin-bottom: 15px; }
 
+.padding-15 {
+  padding: 15px; }
+
 .am-inline-block {
   display: inline-block; }
 
@@ -59,6 +62,15 @@ h3 {
 
 .am-font-1point2 {
   font-size: 1.2em; }
+
+.am-img-fluid {
+  width: 25%; }
+  @media (max-width: 576px) {
+    .am-img-fluid {
+      width: 90%; } }
+  @media (max-width: 768px) {
+    .am-img-fluid {
+      width: 70%; } }
 
 .vl {
   border-left: 5px solid #00cccc;
@@ -293,7 +305,7 @@ section.navigate-portfolio div.container {
   .projectB-header .content {
     z-index: 100;
     position: relative;
-    top: 20%;
+    top: 15%;
     width: 100%; }
     @media (max-width: 768px) {
       .projectB-header .content {
@@ -370,6 +382,12 @@ section.navigate-portfolio div.container {
     width: 40%; }
   .section-wireframe div.img-wrapper img.section-05 {
     width: 20%; }
+
+@media (min-width: 992px) {
+  .para-adjust {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px; } }
 
 .final-result {
   position: relative;

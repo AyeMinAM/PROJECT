@@ -51,6 +51,10 @@
           .B-margin{
           	margin-bottom:15px;
           }
+          .padding-15{
+          	padding:15px;
+          }
+
           .am-inline-block{
           	display:inline-block;
           }
@@ -68,6 +72,15 @@
           	font-size:1.2em;
           }
 
+		.am-img-fluid{
+			width:25%;
+			@media #{$bp-xs}{
+    			width: 90%;
+  				}
+  				@media #{$bp-sm}{
+    			width: 70%;
+  				}
+  			}
           .vl {
           border-left: 5px solid #00cccc;
           height: 75px;
@@ -382,7 +395,7 @@ section.navigate-portfolio {
 					.content{
 				  			z-index:100;
 				  			position:relative;
-				  			top:20%;
+				  			top:15%;
 				  			width:100%;
 
 				  			@media #{$bp-sm}{
@@ -506,6 +519,14 @@ section.navigate-portfolio {
 							width:20%;
 							}
 				}
+}
+
+.para-adjust{
+@media #{$bp-md-min}{
+		width: 50%;
+    	margin: 0 auto;
+    	padding: 15px;
+    }
 }
 
 .final-result{
