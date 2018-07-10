@@ -42,6 +42,9 @@ h3 {
 .T-margin {
   margin-top: 15px; }
 
+.T-margin-30 {
+  margin-top: 30px; }
+
 .B-margin {
   margin-bottom: 15px; }
 
@@ -378,10 +381,19 @@ section.navigate-portfolio div.container {
   text-align: center; }
   .section-wireframe div.img-wrapper img.section-01, .section-wireframe div.img-wrapper img.section-03 {
     width: 60%; }
+    @media (max-width: 768px) {
+      .section-wireframe div.img-wrapper img.section-01, .section-wireframe div.img-wrapper img.section-03 {
+        width: 100%; } }
   .section-wireframe div.img-wrapper img.section-04 {
     width: 40%; }
+    @media (max-width: 768px) {
+      .section-wireframe div.img-wrapper img.section-04 {
+        width: 70%; } }
   .section-wireframe div.img-wrapper img.section-05 {
     width: 20%; }
+    @media (max-width: 768px) {
+      .section-wireframe div.img-wrapper img.section-05 {
+        width: 100%; } }
 
 @media (min-width: 992px) {
   .para-adjust {

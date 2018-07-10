@@ -48,6 +48,9 @@
           .T-margin{
           	margin-top:15px;
           }
+           .T-margin-30{
+          	margin-top:30px;
+          }
           .B-margin{
           	margin-bottom:15px;
           }
@@ -484,9 +487,7 @@ section.navigate-portfolio {
    		@media #{$bp-sm} {
 				width:100%;
 						  }
-
-   
-   	}
+						}
 
 				// .first-half{
   		// 			height:200px;
@@ -512,11 +513,21 @@ section.navigate-portfolio {
 
 						img.section-01, img.section-03{
 							width:60%;
+							@media #{$bp-sm}{
+								width:100%;
 							}
+  }
 						img.section-04{
 							width:40%;
+							@media #{$bp-sm}{
+								width:70%;
+							}
+
 						}img.section-05{
 							width:20%;
+							@media #{$bp-sm}{
+								width:100%;
+							}
 							}
 				}
 }
