@@ -10,6 +10,9 @@
 .bg-gray {
   background-color: #ededef; }
 
+.bg-gray-blue {
+  background-color: #E9ECEF; }
+
 .text-color-gray {
   color: #ededef; }
 
@@ -87,9 +90,12 @@ h3 {
   width: 50px;
   height: auto;
   margin-right: 10px; }
+  @media (max-width: 768px) {
+    .icons-title {
+      width: 25px; } }
 
 .icons-divider {
-  width: 50px;
+  width: 30px;
   height: auto; }
 
 .flex-center-h-v {
@@ -295,10 +301,6 @@ section.branding div.icons-explained {
   section.branding div.icons-explained p {
     color: #000000; }
 
-section.navigate-portfolio div.container {
-  height: 150px;
-  div: nth-child; }
-
 .projectB-header {
   height: 800px;
   position: relative; }
@@ -393,7 +395,7 @@ section.navigate-portfolio div.container {
     width: 20%; }
     @media (max-width: 768px) {
       .section-wireframe div.img-wrapper img.section-05 {
-        width: 100%; } }
+        width: 35%; } }
 
 @media (min-width: 992px) {
   .para-adjust {
@@ -404,6 +406,12 @@ section.navigate-portfolio div.container {
 .final-result {
   position: relative;
   height: 900px; }
+  @media (max-width: 992px) {
+    .final-result {
+      height: 700px; } }
+  @media (max-width: 768px) {
+    .final-result {
+      height: 600px; } }
   .final-result .bar {
     height: 3em;
     background: #a37e2c;
@@ -415,8 +423,7 @@ section.navigate-portfolio div.container {
     .final-result .container .img-wrapper {
       display: block;
       text-align: center;
-      position: absolute;
-      background: yellow; }
+      position: absolute; }
       .final-result .container .img-wrapper img {
         width: 75%; }
 
@@ -424,8 +431,15 @@ section.navigate-portfolio div.container {
   display: inline-block;
   text-align: center; }
   .typo-explained div.img-wrapper img.img-01 {
-    width: 30%; }
+    width: 30%;
+    margin-bottom: 15px; }
+    @media (max-width: 768px) {
+      .typo-explained div.img-wrapper img.img-01 {
+        width: 80%; } }
   .typo-explained div.img-wrapper img.img-02 {
     width: 60%; }
+    @media (max-width: 768px) {
+      .typo-explained div.img-wrapper img.img-02 {
+        width: 100%; } }
 
 /*# sourceMappingURL=burmeseboyyo.css.map */

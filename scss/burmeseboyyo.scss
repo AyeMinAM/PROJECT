@@ -14,6 +14,10 @@
 			.bg-gray{
 				background-color:$gray-01;
 			}
+			 .bg-gray-blue{
+			 	background-color:$gray-blue;
+			}
+
 			.text-color-gray{
 				color:$gray-01;
 			}
@@ -96,9 +100,13 @@
             width:50px;
             height:auto;
             margin-right:10px;
+	            @media #{$bp-sm}{
+	    			width: 25px;
+	  				}
+
           }
         	.icons-divider{
-        	width:50px;
+        	width:30px;
         	height:auto;
         }
           .flex-center-h-v{
@@ -177,8 +185,7 @@ section.projectA{
  				opacity:0.6;
  			}
 
-
- 			@media only screen and (max-width: 576px){
+			@media only screen and (max-width: 576px){
 				font-size:1em;
 				padding: 10px;
 	} 
@@ -374,15 +381,6 @@ section.branding{
 	}
 }
 
-section.navigate-portfolio {
-	div.container {
-		height:150px;
-
-		div:(nth-child)
-	}
-}
-
-
 // Project B page
 
 .projectB-header{
@@ -526,7 +524,7 @@ section.navigate-portfolio {
 						}img.section-05{
 							width:20%;
 							@media #{$bp-sm}{
-								width:100%;
+								width:35%;
 							}
 							}
 				}
@@ -543,6 +541,13 @@ section.navigate-portfolio {
 .final-result{
 	position:relative;
 	height:900px;
+	@media #{$bp-md}{
+		height:700px;
+	}
+	@media #{$bp-sm}{
+		height:600px;
+	}
+
 
 		.bar{
 			height:3em;
@@ -557,7 +562,6 @@ section.navigate-portfolio {
 		  			display:block;
 		  			text-align:center;
 		  			position:absolute;
-		  			background:yellow;
 		  			img{
 		  				width:75%;
 		  			}	
@@ -571,9 +575,16 @@ section.navigate-portfolio {
 		text-align:center;
 		img.img-01{
 			width:30%;
+			margin-bottom:15px;
+			@media #{$bp-sm}{
+			width:80%;
 		}
+	}
 		img.img-02{
 			width:60%;
+			@media #{$bp-sm}{
+			width:100%
+	}
 		}
 	}
 }
