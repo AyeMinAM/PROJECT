@@ -1,6 +1,9 @@
 .bg-black {
   background-color: #000000; }
 
+.bg-white {
+  background-color: #ffffff; }
+
 .bg-darkgray {
   background-color: #333333; }
 
@@ -359,7 +362,7 @@ section.branding div.icons-explained {
   left: 0px;
   right: 0px;
   background-repeat: repeat-x;
-  background-image: url("https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO"); }
+  background-image: url("../img/Path.svg"); }
   @media (max-width: 576px) {
     .curve {
       font-size: 1.6em; } }
@@ -441,5 +444,16 @@ section.branding div.icons-explained {
     @media (max-width: 768px) {
       .typo-explained div.img-wrapper img.img-02 {
         width: 100%; } }
+
+.project-navigation {
+  height: 150px; }
+  .project-navigation div:nth-child(2) {
+    border-left: 1px solid #ffffff; }
+    .project-navigation div:nth-child(2) img {
+      width: 30px;
+      padding-left: 10px; }
+
+footer {
+  border-top: 1px solid #ffffff; }
 
 /*# sourceMappingURL=burmeseboyyo.css.map */

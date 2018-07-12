@@ -5,6 +5,9 @@
 			.bg-black{
 				background-color:$black;
 			}
+			.bg-white{
+				background-color:$white;
+			}
 			.bg-darkgray {
 				background-color:$darkgray;
 			}
@@ -465,12 +468,11 @@ section.branding{
   left: 0px;
   right: 0px;
   background-repeat: repeat-x;
-  background-image:url('https://drive.google.com/uc?id=1Dfa2PCkiVPagG0onoRQKJnc178kBSiiO');
+  background-image:url('../img/Path.svg');
   		@media #{$bp-xs} {
 				font-size:1.6em;
 						  }
-
-   }
+						}
 
 .kootour-explained{
 	background-image:url('../img/about-kootour.jpg');
@@ -589,7 +591,26 @@ section.branding{
 	}
 }
 
+.project-navigation {
 
+	height:150px;
+
+		div:nth-child(1){
+			
+		}
+		div:nth-child(2){
+			border-left:1px solid $white;
+		
+			img{
+				width:30px;
+				padding-left:10px;
+			}
+		}
+}
+
+footer{
+	border-top:1px solid $white;
+}
 // .table-parent{
 //   background-color:white;
 //   width:80%;
