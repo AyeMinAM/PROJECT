@@ -122,7 +122,12 @@
           }
 
 header.projectA-header{
-
+	.image-wrap{
+		@media #{$bp-xs}{
+    			margin-top: 50px;
+  				}
+		
+	}
 	div{
 		background-color:$darkgray; 
 		width: 100%; 
@@ -136,7 +141,7 @@ header.projectA-header{
 		border-left: 3px solid #00cccc; 
 		margin: 20px;
 		@media #{$bp-sm}{
-    			width: 100%;
+    			width: 85%;
   				}
 			p{
 				color:$white; 
@@ -319,11 +324,16 @@ section.projectB{
     	text-align: center;
     	padding: 15px 0;
 			@media #{$bp-xs}{
-    			padding:0;
+    			padding:2px;
+    			border-top-left-radius:3px;
+    			border-bottom-left-radius:3px;
   				}
 		a{
     		color: white;
     		font-size: 20px;
+    	}
+    	a:hover{
+    		text-decoration:none;
     	}
 	}
 
@@ -333,11 +343,16 @@ section.projectB{
     	text-align: center;
     	padding: 15px 0;
 		@media #{$bp-xs}{
-    			padding:0;
+    			padding:2px;
+    			border-top-right-radius:3px;
+    			border-bottom-right-radius:3px;
   				}
     	a{
     		color: #000000;
     		font-size: 20px;
+    	}
+    	a:hover{
+    		text-decoration:none;
     	}
 	}
 }
@@ -398,6 +413,10 @@ section{
 		font-size:16px;
 		color:$black;
 		justify-content:center;
+	}
+
+	h3{
+		padding:15px;
 	}
 }
 

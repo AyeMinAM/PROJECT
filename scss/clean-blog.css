@@ -439,6 +439,9 @@ h3 {
 .text-center {
   text-align: center; }
 
+@media (max-width: 576px) {
+  header.projectA-header .image-wrap {
+    margin-top: 50px; } }
 header.projectA-header div {
   background-color: #333333;
   width: 100%;
@@ -452,7 +455,7 @@ header.projectA-header div {
     margin: 20px; }
     @media (max-width: 768px) {
       header.projectA-header div .about-kt {
-        width: 100%; } }
+        width: 85%; } }
     header.projectA-header div .about-kt p {
       color: #ffffff;
       font-size: 20px;
@@ -594,10 +597,14 @@ section.projectB {
     padding: 15px 0; }
     @media (max-width: 576px) {
       #Tab ul li:first-child {
-        padding: 0; } }
+        padding: 2px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; } }
     #Tab ul li:first-child a {
       color: white;
       font-size: 20px; }
+    #Tab ul li:first-child a:hover {
+      text-decoration: none; }
   #Tab ul li:nth-child(2) {
     width: 50%;
     background: #ededef;
@@ -605,10 +612,14 @@ section.projectB {
     padding: 15px 0; }
     @media (max-width: 576px) {
       #Tab ul li:nth-child(2) {
-        padding: 0; } }
+        padding: 2px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px; } }
     #Tab ul li:nth-child(2) a {
       color: #000000;
       font-size: 20px; }
+    #Tab ul li:nth-child(2) a:hover {
+      text-decoration: none; }
 
 @media screen and (min-width: 769px) {
   .laptop-scroll {
@@ -650,6 +661,8 @@ section {
     font-size: 16px;
     color: #000000;
     justify-content: center; }
+  section h3 {
+    padding: 15px; }
 
 section.branding img.img-fluid {
   display: block;
