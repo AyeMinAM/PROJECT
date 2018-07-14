@@ -121,6 +121,33 @@
           	text-align:center;
           }
 
+header.projectA-header{
+
+	div{
+		background-color:$darkgray; 
+		width: 100%; 
+		display: inline-block;
+		text-align:center;
+
+	.about-kt{
+		width:50%; 
+		display:inline-block; 
+		text-align: center; 
+		border-left: 3px solid #00cccc; 
+		margin: 20px;
+		@media #{$bp-sm}{
+    			width: 100%;
+  				}
+			p{
+				color:$white; 
+				font-size:20px; 
+				padding:20px; 
+				margin:0;
+			}
+		}
+	}
+}
+
 section.projectA{
 	background-color:$turquoise;
 	position:relative;
@@ -280,14 +307,21 @@ section.projectB{
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  	@media #{$bp-xs}{
+    			width:75%;
+    			height:35px;
+  				}
+
 
   	li:first-child{
   		width: 50%;
     	background: #00cccc;
     	text-align: center;
     	padding: 15px 0;
-
-    	a{
+			@media #{$bp-xs}{
+    			padding:0;
+  				}
+		a{
     		color: white;
     		font-size: 20px;
     	}
@@ -298,6 +332,9 @@ section.projectB{
     	background: #ededef;
     	text-align: center;
     	padding: 15px 0;
+		@media #{$bp-xs}{
+    			padding:0;
+  				}
     	a{
     		color: #000000;
     		font-size: 20px;

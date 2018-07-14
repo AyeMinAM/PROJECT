@@ -109,6 +109,26 @@ h3 {
 .text-center {
   text-align: center; }
 
+header.projectA-header div {
+  background-color: #333333;
+  width: 100%;
+  display: inline-block;
+  text-align: center; }
+  header.projectA-header div .about-kt {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    border-left: 3px solid #00cccc;
+    margin: 20px; }
+    @media (max-width: 768px) {
+      header.projectA-header div .about-kt {
+        width: 100%; } }
+    header.projectA-header div .about-kt p {
+      color: #ffffff;
+      font-size: 20px;
+      padding: 20px;
+      margin: 0; }
+
 section.projectA {
   background-color: #00cccc;
   position: relative;
@@ -233,11 +253,18 @@ section.projectB {
   width: 50%;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 576px) {
+    #Tab ul {
+      width: 75%;
+      height: 35px; } }
   #Tab ul li:first-child {
     width: 50%;
     background: #00cccc;
     text-align: center;
     padding: 15px 0; }
+    @media (max-width: 576px) {
+      #Tab ul li:first-child {
+        padding: 0; } }
     #Tab ul li:first-child a {
       color: white;
       font-size: 20px; }
@@ -246,6 +273,9 @@ section.projectB {
     background: #ededef;
     text-align: center;
     padding: 15px 0; }
+    @media (max-width: 576px) {
+      #Tab ul li:nth-child(2) {
+        padding: 0; } }
     #Tab ul li:nth-child(2) a {
       color: #000000;
       font-size: 20px; }
