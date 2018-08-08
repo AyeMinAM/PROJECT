@@ -375,6 +375,15 @@ h3 {
 .max-width-75 {
   max-width: 75%; }
 
+.am-img-responsive {
+  max-width: 50%; }
+  @media (max-width: 576px) {
+    .am-img-responsive {
+      max-width: 90% !important; } }
+
+.T-margin-0 {
+  margin-top: 0; }
+
 .max-width-60 {
   max-width: 60%; }
 
@@ -395,6 +404,9 @@ h3 {
 
 .padding-15 {
   padding: 15px; }
+
+.padding-none {
+  padding: 0; }
 
 .am-inline-block {
   display: inline-block; }
@@ -596,21 +608,21 @@ section.projectB {
 #Tab ul {
   width: 50%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 30px; }
   @media (max-width: 576px) {
     #Tab ul {
-      width: 75%;
-      height: 35px; } }
+      width: 75%; } }
   #Tab ul li:first-child {
     width: 50%;
     background: #00cccc;
     text-align: center;
-    padding: 15px 0; }
+    padding: 10px 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
     @media (max-width: 576px) {
       #Tab ul li:first-child {
-        padding: 2px;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px; } }
+        padding: 5px 0; } }
     #Tab ul li:first-child a {
       color: white;
       font-size: 20px; }
@@ -620,12 +632,12 @@ section.projectB {
     width: 50%;
     background: #ededef;
     text-align: center;
-    padding: 15px 0; }
+    padding: 10px 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
     @media (max-width: 576px) {
       #Tab ul li:nth-child(2) {
-        padding: 2px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px; } }
+        padding: 5px 0; } }
     #Tab ul li:nth-child(2) a {
       color: #000000;
       font-size: 20px; }
@@ -642,6 +654,7 @@ section.projectB {
 .laptop-scroll {
   position: relative;
   margin-top: 30px;
+  margin-bottom: 30px;
   direction: ltr;
   padding-left: 7.5px;
   padding-right: 7.5px;
@@ -683,8 +696,7 @@ section.branding img.img-fluid {
   margin-right: auto; }
 section.branding div.icons-explained {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 15px auto 0 auto; }
   section.branding div.icons-explained p {
     color: #000000; }
 
