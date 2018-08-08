@@ -63,6 +63,9 @@
   		 .T-margin-0{
   			margin-top:0;
   		  }
+  		  .B-margin-0{
+  			margin-bottom:0;
+  		  }
           .max-width-60{
           	max-width:60%;
           }
@@ -459,6 +462,28 @@ section.branding{
 		 p{
 		 	color:$black;
 		 }
+	}
+
+	.typeface{
+		font-family:Montserrat;
+		.regular{
+			font-size:3em;
+			color:#c3c3c3;
+			text-align:center;
+			@media #{$bp-sm}{
+    			font-size: 2em;
+  				}
+
+		}
+		.medium{
+			font-size:3em;
+			color:#333333;
+			text-align:center;
+			margin-bottom:15px;
+			@media #{$bp-sm}{
+    			font-size: 2em;
+  				}
+		}
 	}
 }
 

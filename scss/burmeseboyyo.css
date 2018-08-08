@@ -54,6 +54,9 @@ h3 {
 .T-margin-0 {
   margin-top: 0; }
 
+.B-margin-0 {
+  margin-bottom: 0; }
+
 .max-width-60 {
   max-width: 60%; }
 
@@ -369,6 +372,23 @@ section.branding div.icons-explained {
   margin: 15px auto 0 auto; }
   section.branding div.icons-explained p {
     color: #000000; }
+section.branding .typeface {
+  font-family: Montserrat; }
+  section.branding .typeface .regular {
+    font-size: 3em;
+    color: #c3c3c3;
+    text-align: center; }
+    @media (max-width: 768px) {
+      section.branding .typeface .regular {
+        font-size: 2em; } }
+  section.branding .typeface .medium {
+    font-size: 3em;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 15px; }
+    @media (max-width: 768px) {
+      section.branding .typeface .medium {
+        font-size: 2em; } }
 
 .projectB-header {
   height: 800px;
