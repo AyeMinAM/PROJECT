@@ -184,6 +184,7 @@ section.projectA{
 	background-color:$turquoise;
 	position:relative;
 	height:400px;
+	margin-bottom:15px;
 
 	@media only screen and (max-width: 1200px){
 		height:350px;
@@ -246,11 +247,10 @@ section.projectA{
  				background-color:$white;
  				opacity:0.6;
  			}
-
 			@media only screen and (max-width: 576px){
 				font-size:1em;
 				padding: 10px;
-	} 
+			} 
 		 }
 	}
 } 
@@ -300,13 +300,14 @@ section.projectB{
 		.image-wrapper{
 		position:absolute;
 		bottom:0;
-		left:0;
+		left:20%;
 
 		img{
-			width:80%;
-      		height:auto;
-      		float:left;
-		}
+			width:27%;
+			@media #{$bp-xs}{
+				width:25%;
+				} 
+      		}
 		 a{
 		 	position: absolute;
 		 	z-index: 1000;
@@ -322,13 +323,15 @@ section.projectB{
  				background-color:$white;
  				opacity:0.6;
  			}
-
-
- 			@media only screen and (max-width: 576px){
+ 			@media #{$bp-sm}{
 				font-size:1em;
 				padding: 10px;
+				top:30%
 	} 
-		 }
+			@media #{$bp-lg}{
+		    			top:30%;
+		  				}
+				 }
 	}
 }
 

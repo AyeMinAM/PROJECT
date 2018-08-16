@@ -491,7 +491,8 @@ header.projectA-header div {
 section.projectA {
   background-color: #00cccc;
   position: relative;
-  height: 400px; }
+  height: 400px;
+  margin-bottom: 15px; }
   @media only screen and (max-width: 1200px) {
     section.projectA {
       height: 350px; } }
@@ -584,11 +585,12 @@ section.projectB {
   section.projectB .image-wrapper {
     position: absolute;
     bottom: 0;
-    left: 0; }
+    left: 20%; }
     section.projectB .image-wrapper img {
-      width: 80%;
-      height: auto;
-      float: left; }
+      width: 27%; }
+      @media (max-width: 576px) {
+        section.projectB .image-wrapper img {
+          width: 25%; } }
     section.projectB .image-wrapper a {
       position: absolute;
       z-index: 1000;
@@ -603,10 +605,14 @@ section.projectB {
       section.projectB .image-wrapper a:hover {
         background-color: #ffffff;
         opacity: 0.6; }
-      @media only screen and (max-width: 576px) {
+      @media (max-width: 768px) {
         section.projectB .image-wrapper a {
           font-size: 1em;
-          padding: 10px; } }
+          padding: 10px;
+          top: 30%; } }
+      @media (max-width: 1200px) {
+        section.projectB .image-wrapper a {
+          top: 30%; } }
 
 #Tab ul {
   width: 50%;
