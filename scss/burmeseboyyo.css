@@ -181,17 +181,6 @@ section.projectA {
   @media only screen and (max-width: 400px) {
     section.projectA {
       height: 150px; } }
-  section.projectA .overlay {
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    opacity: 0.6; }
-    section.projectA .overlay:hover {
-      opacity: 0; }
   section.projectA .image-wrapper {
     position: absolute;
     bottom: 0;

@@ -69,23 +69,44 @@ body {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  background-color: transparent;
   font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
     font-weight: 800;
     color: #343a40; }
-  #mainNav .navbar-toggler {
-    font-size: 12px;
-    font-weight: 800;
-    padding: 13px;
-    text-transform: uppercase;
-    color: #343a40; }
-  #mainNav .navbar-nav > li.nav-item > a {
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
+  #mainNav .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: red;
+    overflow-y: hidden;
+    transition: 0.5s;
+    text-algin: center; }
+  #mainNav .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px; }
+  #mainNav .nav-mobile {
+    font-size: 30px;
+    cursor: pointer; }
+  #mainNav .navbar-nav {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px; }
+    #mainNav .navbar-nav > li.nav-item > a {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
   @media only screen and (min-width: 992px) {
     #mainNav {
       border-bottom: 1px solid transparent;
@@ -95,11 +116,26 @@ body {
         color: #ffffff; }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: rgba(255, 255, 255, 0.8); }
-      #mainNav .navbar-nav > li.nav-item > a {
-        padding: 10px 20px;
-        color: #ffffff; }
-        #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-          color: rgba(255, 255, 255, 0.8); } }
+      #mainNav .nav-mobile {
+        display: none; }
+      #mainNav .overlay {
+        background-color: transparent;
+        height: auto;
+        padding: 20px;
+        height: auto; }
+      #mainNav .overlay .closebtn {
+        display: none; }
+      #mainNav .navbar-nav {
+        float: right;
+        width: auto;
+        top: 0;
+        margin-top: 0; }
+        #mainNav .navbar-nav > li.nav-item > a {
+          padding: 10px 20px;
+          float: right;
+          color: #ffffff; }
+          #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+            color: rgba(255, 255, 255, 0.8); } }
   @media only screen and (min-width: 992px) {
     #mainNav {
       -webkit-transition: background-color 0.2s;
@@ -111,24 +147,16 @@ body {
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
-      -webkit-backface-visibility: hidden; }
-      #mainNav.is-fixed {
-        /* when the user scrolls down, we hide the header right above the viewport */
-        position: fixed;
-        top: -67px;
-        -webkit-transition: -webkit-transform 0.2s;
-        -moz-transition: -moz-transform 0.2s;
-        transition: transform 0.2s;
-        border-bottom: 1px solid white;
-        background-color: rgba(255, 255, 255, 0.9); }
-        #mainNav.is-fixed .navbar-brand {
-          color: #212529; }
-          #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-            color: #0085A1; }
-        #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-          color: #212529; }
-          #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-            color: #0085A1; } }
+      -webkit-backface-visibility: hidden;
+      /* when the user scrolls down, we hide the header right above the viewport */
+      position: fixed;
+      -webkit-transition: -webkit-transform 0.2s;
+      -moz-transition: -moz-transform 0.2s;
+      transition: transform 0.2s; }
+      #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+        color: #0085A1; }
+      #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+        color: #0085A1; } }
 
 header.masthead {
   background: no-repeat center center;
@@ -511,17 +539,6 @@ section.projectA {
   @media only screen and (max-width: 400px) {
     section.projectA {
       height: 150px; } }
-  section.projectA .overlay {
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    opacity: 0.6; }
-    section.projectA .overlay:hover {
-      opacity: 0; }
   section.projectA .image-wrapper {
     position: absolute;
     bottom: 0;
