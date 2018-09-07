@@ -4,8 +4,9 @@
   background-color: transparent;
   @include sans-serif-font;
   .navbar-brand {
-    font-weight: 800;
-    color: $gray-800;
+    font-weight: 300;
+    text-transform:uppercase;
+    color: $white;
   }
   .overlay {
       height: 0%;
@@ -35,9 +36,10 @@
   // }
   .nav-mobile{
     font-size:30px;
-    cursor:pointer
+    cursor:pointer;
   }
   .navbar-nav {
+        font-weight:300;
         position: relative;
         top: 25%; /* 25% from the top */
         width: 100%; /* 100% width */
@@ -46,7 +48,6 @@
     > li.nav-item {
       > a {
         font-size: 12px;
-        font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
       }

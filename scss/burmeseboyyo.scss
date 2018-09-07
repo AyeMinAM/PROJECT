@@ -30,6 +30,12 @@
 			.text-color-black{
 				color:$black;
 			}
+			.secondary-color{
+				color:$yellow;
+			}
+			.red{
+				color:$red;
+			}
 
           h3{
             font-weight: 500;
@@ -52,8 +58,7 @@
           .max-width-75{
           	max-width:75%;
           }
-
-          .am-img-responsive{
+		  .am-img-responsive{
           	max-width:50%;
           	@media #{$bp-xs}{
     			max-width: 90%!important;
@@ -90,6 +95,11 @@
           .padding-none{
           	padding:0;
           }
+
+          .spectral{
+          	font-family: 'Spectral', serif;
+          }
+
           .am-inline-block{
           	display:inline-block;
           }
@@ -102,10 +112,10 @@
           .am-font-5{
           	font-size:0.5em;
           }
-
           .am-font-1point2{
           	font-size:1.2em;
           }
+
 
 		.am-img-fluid{
 			width:25%;

@@ -63,6 +63,11 @@
 // @mixin serif-font() {
 //   font-family: 'Lora', 'Times New Roman', serif;
 // }
+// @mixin sans-serif-font() {
+//   font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif;
+// }
 @mixin sans-serif-font() {
-  font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+ font-family:'Open Sans', sans-serif;
+  font-weight:300;
+
+  }

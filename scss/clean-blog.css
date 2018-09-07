@@ -2,7 +2,8 @@ body {
   font-size: 20px;
   background-color: #000000;
   color: #ffffff;
-  font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 p {
   line-height: 1.5;
@@ -17,7 +18,8 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 a {
   color: #212529;
@@ -70,10 +72,12 @@ body {
 #mainNav {
   position: absolute;
   background-color: transparent;
-  font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
   #mainNav .navbar-brand {
-    font-weight: 800;
-    color: #343a40; }
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff; }
   #mainNav .overlay {
     height: 0%;
     width: 100%;
@@ -94,6 +98,7 @@ body {
     font-size: 30px;
     cursor: pointer; }
   #mainNav .navbar-nav {
+    font-weight: 300;
     position: relative;
     top: 25%;
     /* 25% from the top */
@@ -104,7 +109,6 @@ body {
     margin-top: 30px; }
     #mainNav .navbar-nav > li.nav-item > a {
       font-size: 12px;
-      font-weight: 800;
       letter-spacing: 1px;
       text-transform: uppercase; }
   @media only screen and (min-width: 992px) {
@@ -197,12 +201,13 @@ header.masthead {
       color: #ffffff; }
     header.masthead .page-heading .subheading,
     header.masthead .site-heading .subheading {
-      font-size: 1.5rem;
+      font-size: 3.5rem;
       font-weight: 700;
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
-      font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Spectral', serif;
+      font-weight: 300; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading h1,
       header.masthead .site-heading h1 {
@@ -217,12 +222,14 @@ header.masthead {
     font-size: 24px;
     font-weight: 600;
     margin: 10px 0 30px;
-    font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
   header.masthead .post-heading .meta {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
     header.masthead .post-heading .meta a {
       color: #ffffff; }
   @media only screen and (min-width: 768px) {
@@ -230,6 +237,8 @@ header.masthead {
       font-size: 55px; }
     header.masthead .post-heading .subheading {
       font-size: 30px; } }
+  header.masthead hr {
+    border-top: 1px solid #feda6a; }
 
 .post-preview > a {
   color: #212529; }
@@ -275,11 +284,13 @@ header.masthead {
     border-radius: 0;
     background: none;
     box-shadow: none !important;
-    font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
     .floating-label-form-group input::-webkit-input-placeholder,
     .floating-label-form-group textarea::-webkit-input-placeholder {
       color: #868e96;
-      font-family: 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300; }
   .floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;
@@ -383,6 +394,12 @@ footer {
 .text-color-black {
   color: #000000; }
 
+.secondary-color {
+  color: #feda6a; }
+
+.red {
+  color: #e90b0b; }
+
 h3 {
   font-weight: 500;
   font-size: 30px;
@@ -438,6 +455,9 @@ h3 {
 
 .padding-none {
   padding: 0; }
+
+.spectral {
+  font-family: 'Spectral', serif; }
 
 .am-inline-block {
   display: inline-block; }

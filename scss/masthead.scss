@@ -35,12 +35,13 @@ header.masthead {
 
     }
     .subheading {
-      font-size: 1.5rem;
+      font-size: 3.5rem;
       font-weight: 700;
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
-      @include sans-serif-font;
+      font-family: 'Spectral', serif;
+      font-weight:300;
     }
     @media only screen and (min-width: 768px) {
       h1 {
@@ -72,6 +73,7 @@ header.masthead {
         color: $white;
       }
     }
+
     @media only screen and (min-width: 768px) {
       h1 {
         font-size: 55px;
@@ -80,5 +82,8 @@ header.masthead {
         font-size: 30px;
       }
     }
+  }
+  hr{
+    border-top:1px solid $yellow;
   }
 }

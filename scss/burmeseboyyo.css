@@ -25,6 +25,12 @@
 .text-color-black {
   color: #000000; }
 
+.secondary-color {
+  color: #feda6a; }
+
+.red {
+  color: #e90b0b; }
+
 h3 {
   font-weight: 500;
   font-size: 30px;
@@ -80,6 +86,9 @@ h3 {
 
 .padding-none {
   padding: 0; }
+
+.spectral {
+  font-family: 'Spectral', serif; }
 
 .am-inline-block {
   display: inline-block; }
