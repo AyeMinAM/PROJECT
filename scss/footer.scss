@@ -1,7 +1,12 @@
 // Styling for the footer
+.no-border{
+    border-top:1px solid transparent!important;
+  }
 footer {
-  padding: 50px 0 65px;
-  .list-inline {
+  padding: 20px 0 20px;
+  border-top:1px solid #302f2f;
+
+.list-inline {
     margin: 0;
     padding: 0;
   }
@@ -10,4 +15,8 @@ footer {
     margin-bottom: 0;
     text-align: center;
   }
+  p{
+    margin-top:10px;
+  }
+ 
 }

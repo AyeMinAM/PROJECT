@@ -182,13 +182,13 @@ header.masthead {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0 150px;
+    padding: 150px 0 150px;
     color: white; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading,
       header.masthead .post-heading,
       header.masthead .site-heading {
-        padding: 200px 0; } }
+        padding: 150px 0; } }
   header.masthead .page-heading,
   header.masthead .site-heading {
     text-align: default;
@@ -319,8 +319,12 @@ header.masthead {
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6; }
 
+.no-border {
+  border-top: 1px solid transparent !important; }
+
 footer {
-  padding: 50px 0 65px; }
+  padding: 20px 0 20px;
+  border-top: 1px solid #302f2f; }
   footer .list-inline {
     margin: 0;
     padding: 0; }
@@ -328,6 +332,8 @@ footer {
     font-size: 14px;
     margin-bottom: 0;
     text-align: center; }
+  footer p {
+    margin-top: 10px; }
 
 /* .btn {
   font-size: 14px;
@@ -907,12 +913,9 @@ section.branding .typeface {
 .project-navigation {
   height: 150px; }
   .project-navigation div:nth-child(2) {
-    border-left: 1px solid #ffffff; }
+    border-left: 1px solid #302f2f; }
     .project-navigation div:nth-child(2) img {
       width: 30px;
       padding-left: 10px; }
-
-footer {
-  border-top: 1px solid #ffffff; }
 
 /*# sourceMappingURL=clean-blog.css.map */

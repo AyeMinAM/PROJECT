@@ -538,12 +538,9 @@ section.branding .typeface {
 .project-navigation {
   height: 150px; }
   .project-navigation div:nth-child(2) {
-    border-left: 1px solid #ffffff; }
+    border-left: 1px solid #302f2f; }
     .project-navigation div:nth-child(2) img {
       width: 30px;
       padding-left: 10px; }
-
-footer {
-  border-top: 1px solid #ffffff; }
 
 /*# sourceMappingURL=burmeseboyyo.css.map */
