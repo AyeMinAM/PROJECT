@@ -20,35 +20,7 @@
    
     <!-- Custom styles for this template -->
     <link href="scss/clean-blog.css" rel="stylesheet">
-<!--     <style>
-        .flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
-    </style> -->
-
-</head>
+  </head>
  
 <body>
 
@@ -56,26 +28,23 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="index.html">Burmeseboyyo</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <div class="overlay" id="navbarMobile">
+           <span><img class="closebtn icons" onclick="closeNav()" src="img/icons/close.png"></span>
+           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projectA.html">Project A</a>
+              <a class="nav-link white" href="projectA.html">Project A</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projectB.html">Project B</a>
+              <a class="nav-link white" href="projectB.html">Project B</a>
             </li>
-            
           </ul>
         </div>
+        <span> <img class="nav-mobile icons" onclick="openNav()" src="img/icons/menu.png"></span>
       </div>
-  </nav>
+    </nav>
   <!-- Page Header -->
   <header class="masthead projectA-header">
         <div class="image-wrap">
@@ -221,7 +190,7 @@
           <img class="img-fluid am-img-responsive" src="img/icons-color.png">
     </div>
     <div class="icons-explained">
-      <h3 class="padding-none">Color of the Social Media Icons</h3>
+      <h3 class="padding-none">Color of the Social Media Icons)</h3>
       <p class="text-color-gray T-margin-0">
         The colours of soical media icons are the offical colors from the respective soical media. 
       </p>
@@ -365,6 +334,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="js/home.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
  -->

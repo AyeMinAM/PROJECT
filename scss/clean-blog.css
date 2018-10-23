@@ -85,15 +85,14 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
     text-algin: center; }
   #mainNav .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px; }
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px; }
   #mainNav .nav-mobile {
     font-size: 30px;
     cursor: pointer; }
@@ -119,14 +118,15 @@ body {
         padding: 10px 20px;
         color: #ffffff; }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-          color: red; }
+          color: #ffffff; }
       #mainNav .nav-mobile {
         display: none; }
       #mainNav .overlay {
         background-color: transparent;
         height: auto;
         padding: 20px;
-        height: auto; }
+        height: auto;
+        position: relative; }
       #mainNav .overlay .closebtn {
         display: none; }
       #mainNav .navbar-nav {
@@ -139,7 +139,7 @@ body {
           float: right;
           color: #ffffff; }
           #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-            color: red; } }
+            color: #feda6a !important; } }
   @media only screen and (min-width: 992px) {
     #mainNav {
       -webkit-transition: background-color 0.2s;
@@ -156,11 +156,7 @@ body {
       position: fixed;
       -webkit-transition: -webkit-transform 0.2s;
       -moz-transition: -moz-transform 0.2s;
-      transition: transform 0.2s; }
-      #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-        color: #feda6a; }
-      #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-        color: #feda6a; } }
+      transition: transform 0.2s; } }
 
 header.masthead {
   background: no-repeat center center;
@@ -406,6 +402,9 @@ footer {
 .red {
   color: #e90b0b; }
 
+.white {
+  color: #ffffff !important; }
+
 h3 {
   font-weight: 500;
   font-size: 30px;
@@ -461,6 +460,9 @@ h3 {
 
 .padding-none {
   padding: 0; }
+
+.icons {
+  width: 30px; }
 
 .spectral {
   font-family: 'Spectral', serif; }

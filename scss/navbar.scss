@@ -15,16 +15,15 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: red;
+      background-color: rgba(0,0,0,0.9);
       overflow-y: hidden;
       transition: 0.5s;
       text-algin:center;
   }
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px;
 }
     
   // .navbar-toggler {
@@ -61,7 +60,7 @@
       color: $white;
       &:focus,
       &:hover {
-        color: red;
+        color: $white;
       }
     }
     .nav-mobile{
@@ -72,6 +71,7 @@
       height:auto;
       padding:20px;
       height:auto;
+      position:relative;
    }
    .overlay .closebtn {
     display:none;
@@ -89,7 +89,7 @@
           color: $white;
           &:focus,
           &:hover {
-            color: red;
+            color: $yellow!important;
           }
         }
       }
@@ -116,22 +116,8 @@
       transition: transform 0.2s;
       // border-bottom: 1px solid darken($white, .05);
       // background-color: fade-out($white, .1);
-      .navbar-brand{
-        &:focus,
-        &:hover {
-          color: $yellow;
-        }
-      }
-      .navbar-nav {
-        > li.nav-item {
-          > a {
-            &:focus,
-            &:hover {
-              color: $yellow;
-            }
-          }
-        }
-      }
+   
+      
     // }
     // &.is-visible {
     //   /* if the user changes the scrolling direction, we show the header */

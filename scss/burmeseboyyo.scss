@@ -36,6 +36,9 @@
 			.red{
 				color:$red;
 			}
+			.white{
+				color:$white!important;
+			}
 
           h3{
             font-weight: 500;
@@ -94,6 +97,10 @@
           }
           .padding-none{
           	padding:0;
+          }
+
+          .icons{
+          	width:30px;
           }
 
           .spectral{
