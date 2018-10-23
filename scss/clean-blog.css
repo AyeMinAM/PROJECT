@@ -119,7 +119,7 @@ body {
         padding: 10px 20px;
         color: #ffffff; }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-          color: rgba(255, 255, 255, 0.8); }
+          color: red; }
       #mainNav .nav-mobile {
         display: none; }
       #mainNav .overlay {
@@ -139,7 +139,7 @@ body {
           float: right;
           color: #ffffff; }
           #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-            color: rgba(255, 255, 255, 0.8); } }
+            color: red; } }
   @media only screen and (min-width: 992px) {
     #mainNav {
       -webkit-transition: background-color 0.2s;
@@ -158,9 +158,9 @@ body {
       -moz-transition: -moz-transform 0.2s;
       transition: transform 0.2s; }
       #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-        color: #0085A1; }
+        color: #feda6a; }
       #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-        color: #0085A1; } }
+        color: #feda6a; } }
 
 header.masthead {
   background: no-repeat center center;
