@@ -1,10 +1,10 @@
 // Styling for the masthead
+@import "variables.scss";
 header.masthead {
   background: no-repeat center center;
   background-color: $black;
   background-attachment: scroll;
   position: relative;
-  @include background-cover;
   .overlay {
     position: absolute;
     top: 0;
@@ -14,76 +14,61 @@ header.masthead {
     background-color: $gray-900;
     opacity: 0.5;
   }
-  .page-heading,
-  .post-heading,
+    
   .site-heading {
-    padding: 150px 0 150px;
+    padding: 80px 0 10px 0;
     color: white;
-    @media only screen and (min-width: 768px) {
-      padding: 150px 0;
+     @media only screen and (min-width: 991px) {
+      padding: 150px 0 10px 20px;
     }
-  }
-  .page-heading,
-  .site-heading {
-    text-align: default;
-    padding-left:20px;
-    h1 {
-      font-size: 2.5rem;
-      font-weight:700;
-      margin-top: 0;
-      color:$white;
-
-    }
+   
     .subheading {
-      font-size: 3.5rem;
-      font-weight: 700;
+      font-size: 2rem;
+      font-weight: 300;
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
       font-family: 'Spectral', serif;
-      font-weight:300;
-    }
-    @media only screen and (min-width: 768px) {
-      h1 {
-        font-size: 2.5em;
-      }
+      @media only screen and (min-width: 768px){
+      font-size: 3.0rem; 
     }
   }
-  .post-heading {
-    h1 {
-      font-size: 35px;
-    }
-    .meta,
-    .subheading {
-      line-height: 1.1;
-      display: block;
-    }
-    .subheading {
-      font-size: 24px;
-      font-weight: 600;
-      margin: 10px 0 30px;
-      @include sans-serif-font;
-    }
-    .meta {
-      font-size: 20px;
-      font-weight: 300;
-      font-style: italic;
-      @include sans-serif-font;
-      a {
-        color: $white;
+    .social-media{
+        a:hover{
+          color:$yellow;
+        }
       }
-    }
-
-    @media only screen and (min-width: 768px) {
-      h1 {
-        font-size: 55px;
-      }
-      .subheading {
-        font-size: 30px;
-      }
-    }
-  }
-  hr{
-    border-top:1px solid $yellow;
+    
   }
 }
+
+//   .post-heading {
+//     h1 {
+//       font-size: 35px;
+//     }
+//     .meta {
+//       line-height: 1.1;
+//       display: block;
+//     }
+//     .meta {
+//       font-size: 20px;
+//       font-weight: 300;
+//       font-style: italic;
+//       a {
+//         color: $white;
+//       }
+//     }
+
+//     @media only screen and (min-width: 768px) {
+//       h1 {
+//         font-size: 55px;
+//       }
+//       .subheading {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+//   hr{
+//     border-top:1px solid $yellow;
+//   }
+// }

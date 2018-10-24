@@ -13,5 +13,7 @@ footer {
     text-align: center; }
   footer p {
     margin-top: 10px; }
+  footer a:hover {
+    color: #feda6a; }
 
 /*# sourceMappingURL=footer.css.map */

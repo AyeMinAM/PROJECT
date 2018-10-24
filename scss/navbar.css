@@ -1,68 +1,88 @@
-/*
-Error: Undefined mixin 'sans-serif-font'.
-        on line 5 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss, in `sans-serif-font'
-        from line 5 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss
+#mainNav {
+  position: absolute;
+  background-color: transparent; }
+  #mainNav .navbar-brand {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff; }
+  #mainNav .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    text-algin: center; }
+  #mainNav .overlay .closebtn {
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px; }
+  #mainNav .nav-mobile {
+    font-size: 30px;
+    cursor: pointer; }
+  #mainNav .navbar-nav {
+    font-weight: 300;
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px; }
+    #mainNav .navbar-nav > li.nav-item > a {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+  @media only screen and (min-width: 992px) {
+    #mainNav {
+      border-bottom: 1px solid transparent;
+      background: transparent; }
+      #mainNav .navbar-brand {
+        padding: 10px 20px;
+        color: #ffffff; }
+        #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+          color: #ffffff; }
+      #mainNav .nav-mobile {
+        display: none; }
+      #mainNav .overlay {
+        background-color: transparent;
+        height: auto;
+        padding: 20px;
+        height: auto;
+        position: relative; }
+      #mainNav .overlay .closebtn {
+        display: none; }
+      #mainNav .navbar-nav {
+        float: right;
+        width: auto;
+        top: 0;
+        margin-top: 0; }
+        #mainNav .navbar-nav > li.nav-item > a {
+          padding: 10px 20px;
+          float: right;
+          color: #ffffff; }
+          #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+            color: #feda6a !important; } }
+  @media only screen and (min-width: 992px) {
+    #mainNav {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      /* Force Hardware Acceleration in WebKit */
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      /* when the user scrolls down, we hide the header right above the viewport */
+      position: fixed;
+      -webkit-transition: -webkit-transform 0.2s;
+      -moz-transition: -moz-transform 0.2s;
+      transition: transform 0.2s; } }
 
-1: // Styling for the navbar
-2: #mainNav {
-3:   position: absolute;
-4:   background-color: transparent;
-5:   @include sans-serif-font;
-6:   .navbar-brand {
-7:     font-weight: 300;
-8:     text-transform:uppercase;
-9:     color: $white;
-10:   }
-
-Backtrace:
-/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss:5:in `sans-serif-font'
-/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss:5
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'sans-serif-font'.\A         on line 5 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss, in `sans-serif-font'\A         from line 5 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/navbar.scss\A \A 1: // Styling for the navbar\A 2: #mainNav {\A 3:   position: absolute;\A 4:   background-color: transparent;\A 5:   @include sans-serif-font;\A 6:   .navbar-brand {\A 7:     font-weight: 300;\A 8:     text-transform:uppercase;\A 9:     color: $white;\A 10:   }"; }
+/*# sourceMappingURL=navbar.css.map */
