@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Project A | Burmeseboyyo</title>
+    <title>AyeMin - UI/UX Designer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,10 +16,20 @@
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/iconic/css/open-iconic.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Spectral:300,400|Open+Sans:300,400,600|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:300,400|Open+Sans:300,400,600|Montserrat:300,500" rel="stylesheet">
    
     <!-- Custom styles for this template -->
     <link href="scss/clean-blog.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128250304-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128250304-1');
+    </script>
+
   </head>
  
 <body>
@@ -32,13 +42,16 @@
            <span><img class="closebtn icons" onclick="closeNav()" src="img/icons/close.png"></span>
            <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link white" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link white" href="projectA.html">Project A</a>
+              <a class="nav-link" href="projectA.html">Project A</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link white" href="projectB.html">Project B</a>
+              <a class="nav-link " href="projectB.html">Project B</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-white" href="http://www.burmeseboyyo.ca/blog/contact">Say Hi</a>
             </li>
           </ul>
         </div>
@@ -109,7 +122,7 @@
         <div class="row justify-content-center T-margin">
         
               <div class="col-lg-4 col-xs-12 img-fluid flex-center-h-v">
-                  <img class="max-width-75" src="img/card.png">
+                  <img class="travellers-journey-img" src="img/card.png">
               </div> 
               <div class="col-lg-4 col-xs-12">
                   <p >
@@ -126,7 +139,7 @@
     </div>
     <div class="container">
       <div class="flex-center-h-v">
-        <img class="img-fluid max-width-75" src="img/desktop-version-with-grid.jpg">
+        <img class="img-fluid travellers-journey-img" src="img/desktop-version-with-grid.jpg">
       </div>
       <div>
                       <p>
@@ -143,7 +156,7 @@
     </div>
     <div class="container T-margin B-margin">
       <div class="iphoneX flex-center-h-v">
-        <video autoplay loop muted width="30%" height="auto">
+        <video class="travellers-journey-video" autoplay loop muted>
             <source src="img/scroll.mp4" type="video/mp4">
         </video>
       </div>
@@ -153,7 +166,7 @@
     </div>
     <div class="container T-margin B-margin">
       <div class="flex-center-h-v">
-        <img class="img-fluid max-width-75" src="img/kt-forms.png">
+        <img class="img-fluid travellers-journey-img" src="img/kt-forms.png">
       </div>
     </div>
     <div class="flex-center-h-v">
@@ -161,7 +174,7 @@
     </div>
     <div class="container T-margin B-margin">
       <div class="flex-center-h-v">
-        <img class="img-fluid max-width-75" src="img/kt-help@2x.png">
+        <img class="img-fluid travellers-journey-img" src="img/kt-help@2x.png">
       </div>
     </div>
     <div class="flex-center-h-v">
@@ -169,83 +182,85 @@
     </div>
   </section>
 
-
-
 <section class="branding">
   <div class="container-fluid bg-gray">
-     <div class="flex-center-h-v">
-            <h3> <img class="icons-title" src="img/paint-brush.png">Branding</h3>
-     </div>
+    <div class="container">
+      <div class="flex-center-h-v"><h3> <img class="icons-title" src="img/paint-brush.png">Branding</h3> </div>
+      <div><img class="img-fluid am-img-responsive" src="img/color-chart.jpg"></div>
+      <hr align="center" width="10%" class="T-margin-30 B-margin-30">
+      <div class="icons-explained">
+        <h3 class="padding-none">Icons Color Palette</h3>
+          <p class="text-color-gray T-margin-0">
+           Icons color palette is one the most important visual features of Kootour. The icon color palette is produced to cordinate well with the primarary color of 'Kootour Turquoise' , and different spectrum of grey colors. 'Kootour Turquoise' is mainly used for the single color icons and different color of the palette is used in some of the icons to make the site compelling.   
+          </p>
+      </div>
 
-     <div>
-          <img class="img-fluid am-img-responsive" src="img/color-chart.jpg">
-    </div>
-    <div class="icons-explained">
-      <h3 class="padding-none">Icons Color Palette</h3>
+      <div><img class="img-fluid am-img-responsive" src="img/icons-color.png"></div>
+      <hr align="center" width="10%" class="T-margin-30 B-margin-30">
+      <div class="icons-explained">
+        <h3 class="padding-none">Color of the Social Media Icons</h3>
         <p class="text-color-gray T-margin-0">
-         Icons color palette is one the most important visual features of Kootour. The icon color palette is produced to cordinate well with the primarary color of 'Kootour Turquoise' , and different spectrum of grey colors. 'Kootour Turquoise' is mainly used for the single color icons and different color of the palette is used in some of the icons to make the site compelling.   
+          The colours of soical media icons are the offical colors from the respective soical media. 
         </p>
-   </div>
-    <div>
-          <img class="img-fluid am-img-responsive" src="img/icons-color.png">
-    </div>
-    <div class="icons-explained">
-      <h3 class="padding-none">Color of the Social Media Icons)</h3>
-      <p class="text-color-gray T-margin-0">
-        The colours of soical media icons are the offical colors from the respective soical media. 
-      </p>
-    </div>
-    <div>
-          <img class="img-fluid am-img-responsive" src="img/brand-icons-color.jpg">
-    </div>
-    <div class="icons-explained typeface">
-      <h3 class="padding-none">Typeface</h3>
-      <div class="row">
-          <div class="col-lg-5">
-              <p class="text-color-gray T-margin-0 B-margin-0">
-                Montserrat a open sources fonts created by and it can be downloaded on Google Fonts. There are nine different font style: Thin, Ultra-Light, Light, Regular, Medium, Semi-Bold, Bold, Extra-Bold and Black. 
-              </p>
-              <p class="text-color-gray T-margin-0">
-              Kootour uses Light, Regular and Medium. The regular text is used ‘Light’ and header, title and text on the buttons are used Medium. Montserrat Regular font is too bold to use regular text and paragraph to match Kootour’s Design. Montserrat does not come with Italic font family,   
-              </p>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="regular img-fluid">
-              Montserrat Regular
+      </div>
+      <div><img class="img-fluid am-img-responsive" src="img/brand-icons-color.jpg"></div>
+      <hr align="center" width="10%" class="T-margin-30 B-margin-30">
+      <div class="icons-explained">
+        <h3 class="padding-none">Typeface</h3>
+        <div class="row">
+            <div class="col-lg-5">
+                <p class="text-color-gray T-margin-0 B-margin-0">
+                  I use Montserrat Google font created by 
+                  <a class="references" href="https://fonts.google.com/specimen/Montserrat" target="_blank">Julieta Ulanovsky</a> for Kootour project because it is open source, there are manay different font style to choose from and above all, it is a modern geometric font that look good on travel site. Monsterrat Light is used for title, subtitle and paragraph while Monserrat Medium is used for header, prices and text inside the button, and the important text that need to be hilighted. 
+                </p>  
             </div>
-            <div class="medium img-fluid">
-              Montserrat Medium
+            <div class="col-lg-7 typeface">
+              <div class="light img-fluid">Montserrat Light</div>
+              <div class="medium img-fluid">Montserrat Medium</div>
             </div>
-          </div>
-    </div>
-
+        </div>
+      </div>
+  </div>
+</div>
 </section>
 
- <div class="container-fluid bg-black">
-      <div class="container project-navigation">
-          <div class="width-50 flex-center-h-v am-float-left full-height">
-            <span class="oi" data-glyph="home" title="home" aria-hidden="true"></span>
-          </div>
-          <div class="width-50 flex-center-h-v full-height">
-              <div>next project <span><img src="img/icons/ion-android-arrow-forward.jpg"></span></div>
-          </div>
-  </div> 
+<div class="container-fluid bg-black" style="border-top:1px solid #302f2f";>
+    <div class="container project-navigation">
+      <a href="index.html">
+        <div class="width-50 flex-center-h-v am-float-left full-height">
+          <span class="oi" data-glyph="home" title="home" aria-hidden="true"></span>
+        </div>
+      </a>
+      <a href="projectB.html">
+        <div class="width-50 flex-center-h-v full-height">
+            <div>next project <span><img src="img/icons/next-project-btn.jpg"></span></div>
+        </div>
+      </a>
+  </div>
+</div>
  
 <footer>
            <div class="text-center">
                           
                           <ul class="list-inline">
-                             <li class="list-inline-item">
+                            <!-- <li class="list-inline-item">
                               <a href="#">
                                 <span class="fa-stack">
                                   <i class="fa fa-circle fa-stack-2x"></i>
                                   <i class="fa fa-dribbble fa-stack-1x text-muted"></i>
                                 </span>
                               </a>
+                            </li> -->
+                              <li class="list-inline-item">
+                              <a href="https://www.linkedin.com/in/ayemin/" target="_blank">
+                                <span class="fa-stack">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-linkedin fa-stack-1x text-muted"></i>
+                                </span>
+                              </a>
                             </li>
                             <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://www.behance.net/ayemin" target="_blank">
                                 <span class="fa-stack">
                                   <i class="fa fa-circle fa-stack-2x"></i>
                                   <i class="fa fa-behance fa-stack-1x text-muted"></i>
@@ -253,7 +268,7 @@
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://www.instagram.com/burmeseboyyo/" target="_blank">
                                 <span class="fa-stack">
                                   <i class="fa fa-circle fa-stack-2x"></i>
                                   <i class="fa fa-instagram fa-stack-1x text-muted"></i>
@@ -261,7 +276,7 @@
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://github.com/AyeMinAM" target="_blank">
                                 <span class="fa-stack">
                                   <i class="fa fa-circle fa-stack-2x"></i>
                                   <i class="fa fa-github fa-stack-1x text-muted"></i>
@@ -271,7 +286,7 @@
                             </ul>
                             <p class="copyright text-muted">Made with <i class="fa fa-heart red" aria-hidden="true"></i> in Van. &copy; AyeMin</p>
               </div><!--social media icons-->
-    </footer>
+</footer>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

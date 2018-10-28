@@ -38,12 +38,32 @@
         margin-top: 30px;
     > li.nav-item {
       > a {
-        font-size: 12px;
+        font-size: 1rem;
         letter-spacing: 1px;
         text-transform: uppercase;
+        color:$white;
+        @media only screen and (min-width: 992px){
+          font-size:12px;
+        }
       }
     }
+    > li:last-child.nav-item{
+         a{
+          border:none;
+          @media only screen and (min-width: 992px){
+          border:1px solid $white;
+          }
+        }
+
+        a:hover{
+          border:none;
+          @media only screen and (min-width: 992px){
+          border:1px solid $yellow!important;
+          }
+        }
+      }
   }
+
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
     background: transparent;
@@ -64,6 +84,10 @@
       padding:20px;
       height:auto;
       position:relative;
+
+      a{
+        font-size: 1rem;
+      }
    }
    .overlay .closebtn {
     display:none;

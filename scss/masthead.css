@@ -27,6 +27,7 @@ header.masthead {
       @media only screen and (min-width: 768px) {
         header.masthead .site-heading .subheading {
           font-size: 3.0rem; } }
+    header.masthead .site-heading .social-media a:focus,
     header.masthead .site-heading .social-media a:hover {
       color: #feda6a; }
 

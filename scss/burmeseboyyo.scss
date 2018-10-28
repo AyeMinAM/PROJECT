@@ -39,13 +39,29 @@
 			.white{
 				color:$white!important;
 			}
+			a.references, 
+			a.references:hover{
+				text-decoration:none;
+				color:$blue;
+			}
+
+			hr{
+				border-top: 1px solid $black;
+			}
 
           h3{
-            font-weight: 500;
-            font-size: 30px;
+          	font-size:1.2rem;
+            font-weight: 300;
             color:#333333;
-          }
+				@media only screen and (min-width: 756px){
+					font-size:1.75rem;
+				}
+            }
           
+          p{
+          	font-size:1rem;
+          }
+
           .width-50{
             width:50%;
           }
@@ -145,7 +161,7 @@
           top: 40px;
             }
           .icons-title{
-            width:50px;
+            width:30px;
             height:auto;
             margin-right:10px;
 	            @media #{$bp-sm}{
@@ -215,7 +231,6 @@ section.projectA{
 	@media only screen and (max-width: 767px){
 		height:230px;
 	} 
-	
 	@media only screen and (max-width: 576px){
 		height:230px;
 	} 
@@ -226,21 +241,6 @@ section.projectA{
 		height:150px;
 
 		} 
-
-		// .overlay {
-	 //    position: absolute;
-	 //    z-index:100;
-	 //    top: 0;
-	 //    left: 0;
-	 //    height: 100%;
-	 //    width: 100%;
-	 //    background-color: $black;
-	 //    opacity: 0.6;
-
-	 //    &:hover{
-	 //    	opacity:0;
-	 //    }
-	 //  }
 
 		.image-wrapper{
 		position:absolute;
@@ -257,25 +257,41 @@ section.projectA{
 		 	z-index: 1000;
     		top: 35%;
     		left: 14%;
-    		font-weight: 700;
+    		font-weight: 300;
     		font-size: 1.5em;
     		position: absolute;
  			border: 1px solid $white;
  			padding: 25px 35px;
  			color:$white;
+
  			&:hover{
- 				background-color:$white;
- 				opacity:0.6;
+ 				text-decoration:none;
  			}
-			@media only screen and (max-width: 576px){
+ 			@media #{$bp-sm}{
 				font-size:1em;
 				padding: 10px;
-			} 
+				top:30%
+	} 
+			
 		 }
 	}
 } 
 
+.travellers-journey-img{
+	max-width:100%;
+	@media only screen and (min-width: 756px){
+		max-width:75%;
+	} 
+}
 
+.travellers-journey-video{
+	width:75%;
+	height:auto;
+	@media only screen and (min-width: 756px){
+		max-width:30%;
+		height:auto;
+	} 
+}
 section.projectB{
 	background-color:$gold;
 	position:relative;
@@ -302,20 +318,9 @@ section.projectB{
 
 		} 
 
-		.overlay {
-	    position: absolute;
-	    z-index:100;
-	    top: 0;
-	    left: 0;
-	    height: 100%;
-	    width: 100%;
-	    background-color: $black;
-	    opacity: 0.6;
-
 	    &:hover{
-	    	opacity:0;
+	    	text-decoration:none;
 	    }
-	  }
 
 		.image-wrapper{
 		position:absolute;
@@ -333,15 +338,13 @@ section.projectB{
 		 	z-index: 1000;
     		top: 35%;
     		right: 14%;
-    		font-weight: 700;
+    		font-weight: 300;
     		font-size: 1.5em;
-    		position: absolute;
  			border: 1px solid $white;
  			padding: 25px 35px;
  			color:$white;
  			&:hover{
- 				background-color:$white;
- 				opacity:0.6;
+ 				text-decoration:none;
  			}
  			@media #{$bp-sm}{
 				font-size:1em;
@@ -473,14 +476,14 @@ section.branding{
 
 	img.img-fluid{
 		display:block;
-		width:80%;
+		// width:80%;
 		height:auto;
 		margin-left:auto;
 		margin-right:auto;
 	}
 
 	div.icons-explained{
-		width:80%;
+		// width:80%;
 		margin:15px auto 0 auto;
 		 p{
 		 	color:$black;
@@ -489,9 +492,10 @@ section.branding{
 
 	.typeface{
 		font-family:Montserrat;
-		.regular{
+		.light{
 			font-size:3em;
-			color:#c3c3c3;
+			font-weight:300;
+			color:#333333;
 			text-align:center;
 			@media #{$bp-sm}{
     			font-size: 2em;
@@ -500,6 +504,7 @@ section.branding{
 		}
 		.medium{
 			font-size:3em;
+			font-weight:500;
 			color:#333333;
 			text-align:center;
 			margin-bottom:15px;
@@ -513,15 +518,12 @@ section.branding{
 // Project B page
 
 .projectB-header{
-
-	height:800px;
+	height:auto;
   	position:relative;
 
-			@media #{$bp-xs}{
-    			height: auto;
+			@media only screen and (min-width: 768px){
+    			padding-top:100px;
   				}
-
-
 					.content{
 				  			z-index:100;
 				  			position:relative;
@@ -565,26 +567,46 @@ section.branding{
 						  		.img-text{
 							  		display:inline-block;
 							  		position:absolute;
-							  		top:45%;
+							  		top:35%;
 							  		text-align:center;
 
+							  		@media only screen and (min-width: 768px){
+									  				top:45%;
+									  			}
+
 									  	.project-title{
-									  			color:$black;
+									  			color:$white;
+									  			@media only screen and (min-width: 768px){
+									  				color:$black;
+									  			}
 									  			}
 									  	.project-desp{
-									  			color:$black;
-									  			font-size: 2em;
+									  			color:$white;
+									  			font-size: 1.5em;
 									  			text-transform:uppercase;
-
-									  			@media #{$bp-xs} {
-						    						font-size:1.6em;
-						  							}
+									  				@media only screen and (min-width: 768px){
+									  				color:$black;
+									  				font-size:2em;
+									  			}
+									  			
 				 }
 			  	}
 			  }
 			}
 		}
-
+.about-koo{
+		width:50%; 
+		display:inline-block; 
+		text-align: left;
+		@media #{$bp-sm}{
+    			width: 85%;
+  				}
+			p{
+				color:$gold; 
+				padding-bottom:20px; 
+				margin:0;
+			}
+}
 // Project B page FINISHED
 
 .curve {
@@ -630,7 +652,7 @@ section.branding{
 
 .section-wireframe{
 		img.icon-title{
-		width:50px;
+		width:30px;
 		text-align:center;
 		}
 			   div.img-wrapper {
@@ -668,13 +690,13 @@ section.branding{
 
 .final-result{
 	position:relative;
-	height:900px;
-	@media #{$bp-md}{
-		height:700px;
-	}
-	@media #{$bp-sm}{
-		height:600px;
-	}
+	height:500px;
+@media only screen and (min-width: 992px){
+ 	height:700px;
+ }
+ @media only screen and (min-width: 992px){
+ 	height:850px;
+ }
 
 
 		.bar{
@@ -718,21 +740,27 @@ section.branding{
 }
 
 .project-navigation {
+		height:150px;
 
-	height:150px;
-
-		div:nth-child(1){
-			
-		}
-		div:nth-child(2){
-			border-left:1px solid #302f2f;
-		
-			img{
-				width:30px;
-				padding-left:10px;
+		a{
+			color:$white;
+		}	
+		a:hover{
+			text-decoration:none;
+			color:white;
+		}	
+		a:nth-child(2){
+				div{
+					border-left:1px solid #302f2f;
+				
+					img{
+						width:30px;
+						padding-left:10px;
+					}
+				}
 			}
-		}
-}
+	}
+
 
 // .table-parent{
 //   background-color:white;

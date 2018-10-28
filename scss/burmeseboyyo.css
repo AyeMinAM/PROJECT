@@ -34,10 +34,24 @@
 .white {
   color: #ffffff !important; }
 
+a.references,
+a.references:hover {
+  text-decoration: none;
+  color: #0052CC; }
+
+hr {
+  border-top: 1px solid #000000; }
+
 h3 {
-  font-weight: 500;
-  font-size: 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
   color: #333333; }
+  @media only screen and (min-width: 756px) {
+    h3 {
+      font-size: 1.75rem; } }
+
+p {
+  font-size: 1rem; }
 
 .width-50 {
   width: 50%; }
@@ -132,7 +146,7 @@ h3 {
   top: 40px; }
 
 .icons-title {
-  width: 50px;
+  width: 30px;
   height: auto;
   margin-right: 10px; }
   @media (max-width: 768px) {
@@ -212,19 +226,33 @@ section.projectA {
       z-index: 1000;
       top: 35%;
       left: 14%;
-      font-weight: 700;
+      font-weight: 300;
       font-size: 1.5em;
       position: absolute;
       border: 1px solid #ffffff;
       padding: 25px 35px;
       color: #ffffff; }
       section.projectA .image-wrapper a:hover {
-        background-color: #ffffff;
-        opacity: 0.6; }
-      @media only screen and (max-width: 576px) {
+        text-decoration: none; }
+      @media (max-width: 768px) {
         section.projectA .image-wrapper a {
           font-size: 1em;
-          padding: 10px; } }
+          padding: 10px;
+          top: 30%; } }
+
+.travellers-journey-img {
+  max-width: 100%; }
+  @media only screen and (min-width: 756px) {
+    .travellers-journey-img {
+      max-width: 75%; } }
+
+.travellers-journey-video {
+  width: 75%;
+  height: auto; }
+  @media only screen and (min-width: 756px) {
+    .travellers-journey-video {
+      max-width: 30%;
+      height: auto; } }
 
 section.projectB {
   background-color: #a37e2c;
@@ -248,17 +276,8 @@ section.projectB {
   @media only screen and (max-width: 400px) {
     section.projectB {
       height: 150px; } }
-  section.projectB .overlay {
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    opacity: 0.6; }
-    section.projectB .overlay:hover {
-      opacity: 0; }
+  section.projectB:hover {
+    text-decoration: none; }
   section.projectB .image-wrapper {
     position: absolute;
     bottom: 0;
@@ -273,15 +292,13 @@ section.projectB {
       z-index: 1000;
       top: 35%;
       right: 14%;
-      font-weight: 700;
+      font-weight: 300;
       font-size: 1.5em;
-      position: absolute;
       border: 1px solid #ffffff;
       padding: 25px 35px;
       color: #ffffff; }
       section.projectB .image-wrapper a:hover {
-        background-color: #ffffff;
-        opacity: 0.6; }
+        text-decoration: none; }
       @media (max-width: 768px) {
         section.projectB .image-wrapper a {
           font-size: 1em;
@@ -376,26 +393,26 @@ section {
 
 section.branding img.img-fluid {
   display: block;
-  width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto; }
 section.branding div.icons-explained {
-  width: 80%;
   margin: 15px auto 0 auto; }
   section.branding div.icons-explained p {
     color: #000000; }
 section.branding .typeface {
   font-family: Montserrat; }
-  section.branding .typeface .regular {
+  section.branding .typeface .light {
     font-size: 3em;
-    color: #c3c3c3;
+    font-weight: 300;
+    color: #333333;
     text-align: center; }
     @media (max-width: 768px) {
-      section.branding .typeface .regular {
+      section.branding .typeface .light {
         font-size: 2em; } }
   section.branding .typeface .medium {
     font-size: 3em;
+    font-weight: 500;
     color: #333333;
     text-align: center;
     margin-bottom: 15px; }
@@ -404,11 +421,11 @@ section.branding .typeface {
         font-size: 2em; } }
 
 .projectB-header {
-  height: 800px;
+  height: auto;
   position: relative; }
-  @media (max-width: 576px) {
+  @media only screen and (min-width: 768px) {
     .projectB-header {
-      height: auto; } }
+      padding-top: 100px; } }
   .projectB-header .content {
     z-index: 100;
     position: relative;
@@ -442,17 +459,36 @@ section.branding .typeface {
       .projectB-header .content .am-col-2 .img-text {
         display: inline-block;
         position: absolute;
-        top: 45%;
+        top: 35%;
         text-align: center; }
+        @media only screen and (min-width: 768px) {
+          .projectB-header .content .am-col-2 .img-text {
+            top: 45%; } }
         .projectB-header .content .am-col-2 .img-text .project-title {
-          color: #000000; }
+          color: #ffffff; }
+          @media only screen and (min-width: 768px) {
+            .projectB-header .content .am-col-2 .img-text .project-title {
+              color: #000000; } }
         .projectB-header .content .am-col-2 .img-text .project-desp {
-          color: #000000;
-          font-size: 2em;
+          color: #ffffff;
+          font-size: 1.5em;
           text-transform: uppercase; }
-          @media (max-width: 576px) {
+          @media only screen and (min-width: 768px) {
             .projectB-header .content .am-col-2 .img-text .project-desp {
-              font-size: 1.6em; } }
+              color: #000000;
+              font-size: 2em; } }
+
+.about-koo {
+  width: 50%;
+  display: inline-block;
+  text-align: left; }
+  @media (max-width: 768px) {
+    .about-koo {
+      width: 85%; } }
+  .about-koo p {
+    color: #a37e2c;
+    padding-bottom: 20px;
+    margin: 0; }
 
 .curve {
   position: absolute;
@@ -479,7 +515,7 @@ section.branding .typeface {
         width: 100%; } }
 
 .section-wireframe img.icon-title {
-  width: 50px;
+  width: 30px;
   text-align: center; }
 .section-wireframe div.img-wrapper {
   text-align: center; }
@@ -507,13 +543,13 @@ section.branding .typeface {
 
 .final-result {
   position: relative;
-  height: 900px; }
-  @media (max-width: 992px) {
+  height: 500px; }
+  @media only screen and (min-width: 992px) {
     .final-result {
       height: 700px; } }
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .final-result {
-      height: 600px; } }
+      height: 850px; } }
   .final-result .bar {
     height: 3em;
     background: #a37e2c;
@@ -546,9 +582,14 @@ section.branding .typeface {
 
 .project-navigation {
   height: 150px; }
-  .project-navigation div:nth-child(2) {
+  .project-navigation a {
+    color: #ffffff; }
+  .project-navigation a:hover {
+    text-decoration: none;
+    color: white; }
+  .project-navigation a:nth-child(2) div {
     border-left: 1px solid #302f2f; }
-    .project-navigation div:nth-child(2) img {
+    .project-navigation a:nth-child(2) div img {
       width: 30px;
       padding-left: 10px; }
 

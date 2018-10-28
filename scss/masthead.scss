@@ -34,6 +34,7 @@ header.masthead {
     }
   }
     .social-media{
+        a:focus, 
         a:hover{
           color:$yellow;
         }
