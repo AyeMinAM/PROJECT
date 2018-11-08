@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Contact, AyeMin,UI/UX Designer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="vendor/iconic/css/open-iconic.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Spectral:300,400|Open+Sans:300,400,600|Montserrat" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="scss/clean-blog.css" rel="stylesheet">  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128250304-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128250304-1');
+    </script>
 
   </head>
 
@@ -28,54 +37,40 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="index.html">Burmeseboyyo</a>
+        <div class="overlay" id="navbarMobile">
+           <span><img class="closebtn icons" onclick="closeNav()" src="img/icons/close.png"></span>
+           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link white" href="projectA.html">Project A</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
+              <a class="nav-link white" href="projectB.html">Project B</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link border-white" href="contact.html">Say Hi</a>
             </li>
           </ul>
         </div>
+        <span> <img class="nav-mobile icons" onclick="openNav()" src="img/icons/menu.png"></span>
       </div>
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/contact-bg.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="page-heading">
-              <h1>Contact Me</h1>
-              <span class="subheading">Have questions? I have answers.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="container contactForm">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+          <p>Hey, I would like to hear from you. Ask me anything.</p>
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" novalidate>
+          <form name="sentMessage" id="contactForm">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Name</label>
@@ -90,13 +85,13 @@
                 <p class="help-block text-danger"></p>
               </div>
             </div>
-            <div class="control-group">
+          <!--   <div class="control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
                 <label>Phone Number</label>
                 <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                 <p class="help-block text-danger"></p>
               </div>
-            </div>
+            </div> -->
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Message</label>
@@ -118,51 +113,60 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
-          </div>
-        </div>
-      </div>
+           <div class="text-center">
+                          
+                          <ul class="list-inline">
+                            <!-- <li class="list-inline-item">
+                              <a href="#">
+                                <span class="fa-stack">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-dribbble fa-stack-1x text-muted"></i>
+                                </span>
+                              </a>
+                            </li> -->
+                              <li class="list-inline-item">
+                              <a href="https://www.linkedin.com/in/ayemin/" target="_blank">
+                                <span class="fa-stack">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-linkedin fa-stack-1x text-muted"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.behance.net/ayemin" target="_blank">
+                                <span class="fa-stack">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-behance fa-stack-1x text-muted"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.instagram.com/burmeseboyyo/" target="_blank">
+                                <span class="fa-stack">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-instagram fa-stack-1x text-muted"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://github.com/AyeMinAM" target="_blank">
+                                <span class="fa-stack">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-github fa-stack-1x text-muted"></i>
+                                </span>
+                              </a>
+                            </li>
+                            </ul>
+                            <p class="copyright text-muted">Made with <i class="fa fa-heart red" aria-hidden="true"></i> in Van. &copy; AyeMin</p>
+              </div><!--social media icons-->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="js/home.js"></script>
 
   </body>
 
