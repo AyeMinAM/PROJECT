@@ -2,6 +2,43 @@
 
 .contactForm{
   padding-top:100px;
+    form{
+      .form-control{
+        background-color:transparent; 
+        color:$white;
+      }
+      .form-control:focus{
+        border-color:$yellow;
+      }
+      div.help-block.text-danger ul{
+        list-style: none;
+        font-size:1rem;
+        margin-top:1rem;
+      }
+      .form-group.success:hover{
+        background-color:transparent;
+      }
+      #success .alert.form-success{
+            color: $yellow;
+            font-size: 1rem;
+            padding: 0;
+            }
+      #success .form-danger{
+            color: red;
+            font-size: 1rem;
+            padding: 0;
+            }
+
+      button{
+        background-color:$yellow;
+        width: 25%;
+        padding: 8px 0;
+        border: 0;
+        color: black;
+        font-size:14px;
+      }
+
+    }
 }
 
 .floating-label-form-group {

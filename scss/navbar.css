@@ -41,6 +41,8 @@
       @media only screen and (min-width: 992px) {
         #mainNav .navbar-nav > li.nav-item > a {
           font-size: 12px; } }
+    #mainNav .navbar-nav > li.nav-item .greek-alphabet {
+      text-transform: lowercase !important; }
     #mainNav .navbar-nav > li:last-child.nav-item a {
       border: none; }
       @media only screen and (min-width: 992px) {

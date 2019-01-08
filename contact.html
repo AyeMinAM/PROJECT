@@ -45,10 +45,13 @@
               <a class="nav-link white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link white" href="projectA.html">Project A</a>
+              <a class="nav-link" href="projectA.html">Project <span class="greek-alphabet">α</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link white" href="projectB.html">Project B</a>
+              <a class="nav-link " href="projectB.html">Project<span class="greek-alphabet"> β</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="projectB.html">Project<span class="greek-alphabet"> γ</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link border-white" href="contact.html">Say Hi</a>
@@ -70,41 +73,28 @@
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
+          
+            <form name="sentMessage" id="contactForm" novalidate>
+                <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="name*" required data-validation-required-message="Please enter your name.">
+                <div class="help-block text-danger"></div>
+                </div>
+                <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="email*" required data-validation-required-message="Please enter your email address.">
+               <div class="help-block text-danger"></div>
+                </div>
+                <div class="form-group">
+                <input type="text" class="form-control" id="website" placeholder="website (optional)">
+                </div>
+                 <div class="form-group">
+                  <textarea class="form-control" id="message" rows="5" placeholder="message*" required data-validation-required-message="Please enter a message."></textarea>
+                  <div class="help-block text-danger"></div>
+                </div>
+                <div id="success"></div>
+                <div class="form-group text-center">
+                <button type="submit" id="sendMessageButton">SEND</button>
               </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Email Address</label>
-                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-          <!--   <div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div> -->
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Message</label>
-                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-            </div>
-          </form>
+            </form>
         </div>
       </div>
     </div>
@@ -167,6 +157,10 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
     <script src="js/home.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
   </body>
 

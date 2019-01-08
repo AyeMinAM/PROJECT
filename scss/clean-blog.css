@@ -112,6 +112,8 @@ body {
       @media only screen and (min-width: 992px) {
         #mainNav .navbar-nav > li.nav-item > a {
           font-size: 12px; } }
+    #mainNav .navbar-nav > li.nav-item .greek-alphabet {
+      text-transform: lowercase !important; }
     #mainNav .navbar-nav > li:last-child.nav-item a {
       border: none; }
       @media only screen and (min-width: 992px) {
@@ -234,6 +236,32 @@ header.masthead {
 
 .contactForm {
   padding-top: 100px; }
+  .contactForm form .form-control {
+    background-color: transparent;
+    color: #ffffff; }
+  .contactForm form .form-control:focus {
+    border-color: #feda6a; }
+  .contactForm form div.help-block.text-danger ul {
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 1rem; }
+  .contactForm form .form-group.success:hover {
+    background-color: transparent; }
+  .contactForm form #success .alert.form-success {
+    color: #feda6a;
+    font-size: 1rem;
+    padding: 0; }
+  .contactForm form #success .form-danger {
+    color: red;
+    font-size: 1rem;
+    padding: 0; }
+  .contactForm form button {
+    background-color: #feda6a;
+    width: 25%;
+    padding: 8px 0;
+    border: 0;
+    color: black;
+    font-size: 14px; }
 
 .floating-label-form-group {
   font-size: 14px;
@@ -652,6 +680,54 @@ section.projectB {
           top: 30%; } }
       @media (max-width: 1200px) {
         section.projectB .image-wrapper a {
+          top: 30%; } }
+
+section.projectC {
+  background-color: #fafafa;
+  position: relative;
+  height: 550px;
+  margin-top: 15px; }
+  @media only screen and (max-width: 1200px) {
+    section.projectC {
+      height: 350px; } }
+  @media only screen and (max-width: 991px) {
+    section.projectC {
+      height: 300px; } }
+  @media only screen and (max-width: 767px) {
+    section.projectC {
+      height: 230px; } }
+  @media only screen and (max-width: 576px) {
+    section.projectC {
+      height: 230px; } }
+  @media only screen and (max-width: 500px) {
+    section.projectC {
+      height: 200px; } }
+  @media only screen and (max-width: 400px) {
+    section.projectC {
+      height: 150px; } }
+  section.projectC .image-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    section.projectC .image-wrapper img {
+      width: 100%; }
+    section.projectC .image-wrapper a {
+      position: absolute;
+      z-index: 1000;
+      top: 35%;
+      left: 14%;
+      font-weight: 300;
+      font-size: 1.5em;
+      position: absolute;
+      border: 1px solid #ffffff;
+      padding: 25px 35px;
+      color: #ffffff; }
+      section.projectC .image-wrapper a:hover {
+        text-decoration: none; }
+      @media (max-width: 768px) {
+        section.projectC .image-wrapper a {
+          font-size: 1em;
+          padding: 10px;
           top: 30%; } }
 
 #Tab ul {

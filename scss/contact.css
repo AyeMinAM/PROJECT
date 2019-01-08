@@ -1,28 +1,46 @@
 /*
-Error: Undefined variable: "$gray-300".
-        on line 12 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/contact.scss
+Error: Undefined variable: "$white".
+        on line 8 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/contact.scss
 
-7: .floating-label-form-group {
-8:   font-size: 14px;
-9:   position: relative;
-10:   margin-bottom: 0;
-11:   padding-bottom: 0.5em;
-12:   border-bottom: 1px solid $gray-300;
-13:   input,
-14:   textarea {
-15:     font-size: 1.5em;
-16:     position: relative;
-17:     z-index: 1;
+3: .contactForm{
+4:   padding-top:100px;
+5:     form{
+6:       .form-control{
+7:         background-color:transparent; 
+8:         color:$white;
+9:       }
+10:       .form-control:focus{
+11:         border-color:$yellow;
+12:       }
+13:       div.help-block.text-danger ul{
 
 Backtrace:
-/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/contact.scss:12
+/Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/contact.scss:8
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +84,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray-300\".\A         on line 12 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/contact.scss\A \A 7: .floating-label-form-group {\A 8:   font-size: 14px;\A 9:   position: relative;\A 10:   margin-bottom: 0;\A 11:   padding-bottom: 0.5em;\A 12:   border-bottom: 1px solid $gray-300;\A 13:   input,\A 14:   textarea {\A 15:     font-size: 1.5em;\A 16:     position: relative;\A 17:     z-index: 1;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 8 of /Users/ayemin/Desktop/burmeseboyyo/PROJECT/scss/contact.scss\A \A 3: .contactForm{\A 4:   padding-top:100px;\A 5:     form{\A 6:       .form-control{\A 7:         background-color:transparent; \A 8:         color:$white;\A 9:       }\A 10:       .form-control:focus{\A 11:         border-color:$yellow;\A 12:       }\A 13:       div.help-block.text-danger ul{"; }

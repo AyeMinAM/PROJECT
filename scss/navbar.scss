@@ -46,6 +46,9 @@
           font-size:12px;
         }
       }
+      .greek-alphabet{
+        text-transform: lowercase!important;
+    }
     }
     > li:last-child.nav-item{
          a{
@@ -145,3 +148,4 @@
     // }
   }
 }
+

@@ -358,6 +358,64 @@ section.projectB{
 	}
 }
 
+section.projectC{
+	background-color:#fafafa;
+	position:relative;
+	height:550px;
+	margin-top:15px;
+
+	@media only screen and (max-width: 1200px){
+		height:350px;
+	} 
+	@media only screen and (max-width: 991px){
+		height:300px;
+	} 
+	@media only screen and (max-width: 767px){
+		height:230px;
+	} 
+	@media only screen and (max-width: 576px){
+		height:230px;
+	} 
+	@media only screen and (max-width: 500px){
+		height:200px;
+	} 
+	@media only screen and (max-width: 400px){
+		height:150px;
+
+		} 
+
+		.image-wrapper{
+		position:absolute;
+		bottom:0;
+		left:0;
+
+		img{
+			width:100%;
+		}
+		 a{
+		 	position: absolute;
+		 	z-index: 1000;
+    		top: 35%;
+    		left: 14%;
+    		font-weight: 300;
+    		font-size: 1.5em;
+    		position: absolute;
+ 			border: 1px solid $white;
+ 			padding: 25px 35px;
+ 			color:$white;
+
+ 			&:hover{
+ 				text-decoration:none;
+ 			}
+ 			@media #{$bp-sm}{
+				font-size:1em;
+				padding: 10px;
+				top:30%
+	} 
+			
+		 }
+	}
+} 
 // Project A
 //tab for laptop-scroll
 
@@ -760,6 +818,8 @@ section.branding{
 				}
 			}
 	}
+
+// contact
 
 
 // .table-parent{
